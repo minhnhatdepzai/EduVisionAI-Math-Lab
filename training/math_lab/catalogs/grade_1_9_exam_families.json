@@ -1,0 +1,1520 @@
+{
+  "schema_version": "1.0",
+  "catalog_version": "math-family-catalog-v3",
+  "checked_at": "2026-08-31",
+  "locale": "vi-VN",
+  "scope": "Minimum exam-derived Math Lab coverage baseline for Vietnamese grades 1-9; patterns are paraphrased taxonomy labels, not copied exam questions or solutions.",
+  "status_definitions": {
+    "implemented_sft": "A schema-validated SFT family exists and its renderer exposes the mathematical structure required by this family.",
+    "renderer_ready": "A truthful renderer exists, but this exact family is not yet represented in generated SFT data.",
+    "partial": "A related renderer exists but misses a material operation, representation or proof step from the observed exam family.",
+    "missing": "No current renderer can truthfully visualize the complete observed family."
+  },
+  "sources": [
+    {
+      "id": "curriculum_math_2018",
+      "kind": "official_curriculum",
+      "title": "Chương trình giáo dục phổ thông môn Toán, ban hành kèm Thông tư 32/2018/TT-BGDĐT",
+      "grades": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "url": "https://thcsandong.haiphong.edu.vn/van-ban-bo-gddt/chuong-trinh-giao-duc-pho-thong-mon-toan-ban-hanh-kem-theo-thong-tu-so-322018tt/vbctmb/20343/91425",
+      "use": "taxonomy_only"
+    },
+    {
+      "id": "exam_grade_1_lhp_2024_2025",
+      "kind": "public_school_exam_and_matrix",
+      "title": "Kiểm tra định kì cuối học kì II môn Toán lớp 1, 2024-2025",
+      "grades": [
+        1
+      ],
+      "url": "https://c1lehongphong.phuonghadong.edu.vn/laws/detail/KE-HOACH-KIEM-TRA-CUOI-HK2-NAM-HOC-2024-2025-29/?download=1&id=2",
+      "use": "taxonomy_only"
+    },
+    {
+      "id": "exam_grade_2_ngoc_lam_2022_2023",
+      "kind": "public_school_exam",
+      "title": "Kiểm tra cuối học kì II môn Toán lớp 2, 2022-2023",
+      "grades": [
+        2
+      ],
+      "url": "https://thngoclam.hanoi.edu.vn/hoc-ki-ii/de-kiem-tra-cuoi-hoc-ki-ii-nam-hoc-2022-2023-mon-toan-lop-2/ct/10746/654482",
+      "use": "taxonomy_only"
+    },
+    {
+      "id": "exam_grade_3_ngoc_lam_2022_2023",
+      "kind": "public_school_exam",
+      "title": "Kiểm tra cuối học kì II môn Toán lớp 3, 2022-2023",
+      "grades": [
+        3
+      ],
+      "url": "https://thngoclam.hanoi.edu.vn/hoc-ki-ii/de-kiem-tra-cuoi-hoc-ki-ii-nam-hoc-2022-2023-mon-toan-lop-3/ct/10746/654473",
+      "use": "taxonomy_only"
+    },
+    {
+      "id": "exam_grade_4_ngoc_lam_2022_2023",
+      "kind": "public_school_exam",
+      "title": "Kiểm tra cuối học kì II môn Toán lớp 4, 2022-2023",
+      "grades": [
+        4
+      ],
+      "url": "https://thngoclam.hanoi.edu.vn/hoc-ki-ii/de-kiem-tra-cuoi-hoc-ki-ii-nam-hoc-2022-2023-mon-toan-lop-4/ct/10746/654462",
+      "use": "taxonomy_only"
+    },
+    {
+      "id": "exam_grade_5_ai_mo_b_2022_2023",
+      "kind": "public_school_exam",
+      "title": "Kiểm tra định kì cuối học kì II môn Toán lớp 5, 2022-2023",
+      "grades": [
+        5
+      ],
+      "url": "https://thaimob.hanoi.edu.vn/cuoi-ki-ii/de-kiem-tra-dinh-ki-cuoi-hoc-ki-ii-mon-toan-lop-5-nam-hoc-2022-2023/ctmb/739/664499",
+      "use": "taxonomy_only"
+    },
+    {
+      "id": "exam_grade_6_ntt_2025_2026",
+      "kind": "public_school_exam",
+      "title": "Kiểm tra cuối học kì II môn Toán lớp 6, 2025-2026",
+      "grades": [
+        6
+      ],
+      "url": "https://thcsnguyenthithap.hcm.edu.vn/to-bo-mon/de-kiem-tra-cuoi-hkii-mon-toan-nam-hoc-2025-2026/ctmb/101030/750448",
+      "artifact": "in-toan-6-ck2d12-nhu-thuy.pdf",
+      "use": "taxonomy_only"
+    },
+    {
+      "id": "exam_grade_7_ntt_2025_2026",
+      "kind": "public_school_exam",
+      "title": "Kiểm tra cuối học kì II môn Toán lớp 7, 2025-2026",
+      "grades": [
+        7
+      ],
+      "url": "https://thcsnguyenthithap.hcm.edu.vn/to-bo-mon/de-kiem-tra-cuoi-hkii-mon-toan-nam-hoc-2025-2026/ctmb/101030/750448",
+      "artifact": "toan-7-ck2de-12-bao-anh.pdf",
+      "use": "taxonomy_only"
+    },
+    {
+      "id": "exam_grade_8_ntt_2025_2026",
+      "kind": "public_school_exam",
+      "title": "Kiểm tra cuối học kì II môn Toán lớp 8, 2025-2026",
+      "grades": [
+        8
+      ],
+      "url": "https://thcsnguyenthithap.hcm.edu.vn/to-bo-mon/de-kiem-tra-cuoi-hkii-mon-toan-nam-hoc-2025-2026/ctmb/101030/750448",
+      "artifact": "toan-8-ck2-de-chinh-thuc.pdf",
+      "use": "taxonomy_only"
+    },
+    {
+      "id": "exam_grade_9_ntt_2025_2026",
+      "kind": "public_school_exam",
+      "title": "Kiểm tra cuối học kì II môn Toán lớp 9, 2025-2026",
+      "grades": [
+        9
+      ],
+      "url": "https://thcsnguyenthithap.hcm.edu.vn/to-bo-mon/de-kiem-tra-cuoi-hkii-mon-toan-nam-hoc-2025-2026/ctmb/101030/750448",
+      "artifact": "in-9-cuoi-hk2-25-26.pdf",
+      "use": "taxonomy_only"
+    },
+    {
+      "id": "user_fraction_power_grade_7",
+      "kind": "user_provided_exam_image",
+      "title": "Ảnh câu hỏi trắc nghiệm lũy thừa của phân số âm do người dùng cung cấp",
+      "grades": [
+        7
+      ],
+      "reference": "conversation attachment, 2026-08-26",
+      "use": "evaluation_seed_only"
+    },
+    {
+      "id": "user_angle_bisector_grade_7",
+      "kind": "user_provided_exam_image",
+      "title": "Ảnh câu hỏi trắc nghiệm tia phân giác và số đo góc do người dùng cung cấp",
+      "grades": [
+        7
+      ],
+      "reference": "conversation attachment, 2026-08-26",
+      "use": "evaluation_seed_only"
+    },
+    {
+      "id": "user_sequential_rice_ratio_grade_7",
+      "kind": "user_provided_word_problem",
+      "title": "Bài bán gạo theo phân số của phần còn lại do người dùng cung cấp",
+      "grades": [
+        7
+      ],
+      "reference": "conversation text and screenshot, 2026-08-26",
+      "use": "evaluation_seed_only"
+    },
+    {
+      "id": "user_variable_people_work_rate_grade_5",
+      "kind": "user_provided_word_problem",
+      "title": "Bài toán thay đổi số người với khối lượng công việc không đổi do người dùng cung cấp",
+      "grades": [
+        5
+      ],
+      "reference": "conversation text and screenshot, 2026-08-27",
+      "use": "evaluation_seed_only"
+    },
+    {
+      "id": "user_mixed_area_remainder_grade_6",
+      "kind": "user_provided_word_problem",
+      "title": "Bài diện tích hỗn hợp và hai phân số liên tiếp trên phần còn lại do người dùng cung cấp",
+      "grades": [
+        6
+      ],
+      "reference": "conversation text and screenshot, 2026-08-27",
+      "use": "evaluation_seed_only"
+    },
+    {
+      "id": "user_grade9_midterm_exam_2026_08_28",
+      "kind": "user_provided_exam_text",
+      "title": "Đề kiểm tra Toán lớp 9 do người dùng cung cấp để kiểm thử Math Lab",
+      "grades": [
+        9
+      ],
+      "reference": "conversation attachment, 2026-08-28",
+      "use": "evaluation_seed_only"
+    },
+    {
+      "id": "user_xyz_equation_2026_08_28",
+      "kind": "user_provided_expression",
+      "title": "Biểu thức ba biến có thành phần bậc hai do người dùng cung cấp",
+      "grades": [
+        9
+      ],
+      "reference": "conversation text and screenshot, 2026-08-28",
+      "use": "evaluation_seed_only"
+    },
+    {
+      "id": "user_grade_1_9_taxonomy_2026_08_31",
+      "kind": "user_provided_taxonomy",
+      "title": "Danh sách nhóm bài Toán phổ thông Việt Nam lớp 1 đến lớp 9 do người dùng cung cấp",
+      "grades": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "reference": "conversation attachment, 2026-08-31",
+      "use": "taxonomy_only"
+    }
+  ],
+  "families": [
+    {
+      "id": "place_value_read_write",
+      "label_vi": "Đọc, viết và phân tích cấu tạo số",
+      "grades": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "domain": "number",
+      "observed_in": [
+        "exam_grade_1_lhp_2024_2025",
+        "exam_grade_2_ngoc_lam_2022_2023",
+        "exam_grade_3_ngoc_lam_2022_2023",
+        "exam_grade_5_ai_mo_b_2022_2023"
+      ],
+      "pattern_vi": "Đổi giữa cách đọc, chữ số và các hàng đơn vị, chục, trăm hoặc phần thập phân.",
+      "target_visualization": "place_value",
+      "status": "implemented_sft",
+      "current_renderer": "place_value",
+      "dataset_family": "place_value_read_write",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "number_ordering_rounding",
+      "label_vi": "So sánh, sắp xếp và làm tròn số",
+      "grades": [
+        1,
+        3,
+        6
+      ],
+      "domain": "number",
+      "observed_in": [
+        "exam_grade_1_lhp_2024_2025",
+        "exam_grade_3_ngoc_lam_2022_2023",
+        "exam_grade_6_ntt_2025_2026"
+      ],
+      "pattern_vi": "Đặt nhiều số theo thứ tự hoặc làm tròn tại một hàng chỉ định.",
+      "target_visualization": "number_compare",
+      "status": "implemented_sft",
+      "current_renderer": "number_compare",
+      "dataset_family": "number_ordering_rounding",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "concrete_addition_word_problem",
+      "label_vi": "Bài toán thêm vào bằng vật thể",
+      "grades": [
+        1,
+        2
+      ],
+      "domain": "arithmetic",
+      "observed_in": [
+        "exam_grade_1_lhp_2024_2025",
+        "exam_grade_2_ngoc_lam_2022_2023"
+      ],
+      "pattern_vi": "Một nhóm ban đầu nhận thêm một nhóm, cần tìm tất cả.",
+      "target_visualization": "object_group",
+      "status": "implemented_sft",
+      "current_renderer": "object_group",
+      "dataset_family": "addition",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "concrete_subtraction_word_problem",
+      "label_vi": "Bài toán bớt đi bằng vật thể",
+      "grades": [
+        1,
+        2
+      ],
+      "domain": "arithmetic",
+      "observed_in": [
+        "exam_grade_1_lhp_2024_2025",
+        "exam_grade_2_ngoc_lam_2022_2023"
+      ],
+      "pattern_vi": "Một nhóm ban đầu mất đi một phần, cần tìm số còn lại.",
+      "target_visualization": "object_group",
+      "status": "implemented_sft",
+      "current_renderer": "object_group",
+      "dataset_family": "subtraction",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "column_arithmetic_regrouping",
+      "label_vi": "Đặt tính dọc và nhớ, mượn theo hàng",
+      "grades": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "domain": "arithmetic",
+      "observed_in": [
+        "exam_grade_1_lhp_2024_2025",
+        "exam_grade_2_ngoc_lam_2022_2023",
+        "exam_grade_3_ngoc_lam_2022_2023",
+        "exam_grade_5_ai_mo_b_2022_2023"
+      ],
+      "pattern_vi": "Cộng, trừ, nhân hoặc chia theo cột với thao tác nhớ, mượn hay hạ chữ số.",
+      "target_visualization": "column_algorithm",
+      "status": "implemented_sft",
+      "current_renderer": "column_algorithm",
+      "dataset_family": "column_arithmetic_regrouping",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "missing_number_equation",
+      "label_vi": "Điền số còn thiếu trong phép tính",
+      "grades": [
+        1,
+        2
+      ],
+      "domain": "arithmetic",
+      "observed_in": [
+        "exam_grade_1_lhp_2024_2025",
+        "exam_grade_2_ngoc_lam_2022_2023"
+      ],
+      "pattern_vi": "Tìm ô trống hoặc thừa số chưa biết để hai vế bằng nhau.",
+      "target_visualization": "part_whole",
+      "status": "implemented_sft",
+      "current_renderer": "part_whole",
+      "dataset_family": "missing_number_equation",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "shape_recognition_counting_pattern",
+      "label_vi": "Nhận dạng, đếm và tiếp diễn quy luật hình",
+      "grades": [
+        1,
+        2
+      ],
+      "domain": "geometry_2d",
+      "observed_in": [
+        "exam_grade_1_lhp_2024_2025",
+        "exam_grade_2_ngoc_lam_2022_2023"
+      ],
+      "pattern_vi": "Nhận tên hình phẳng, khối, đếm hình ghép hoặc chọn phần tử tiếp theo của dãy hình.",
+      "target_visualization": "shape_pattern",
+      "status": "implemented_sft",
+      "current_renderer": "shape_pattern",
+      "dataset_family": "shape_recognition_counting_pattern",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "time_calendar_duration",
+      "label_vi": "Đọc đồng hồ, lịch và tính khoảng thời gian",
+      "grades": [
+        1,
+        3,
+        5
+      ],
+      "domain": "time",
+      "observed_in": [
+        "exam_grade_1_lhp_2024_2025",
+        "exam_grade_3_ngoc_lam_2022_2023",
+        "exam_grade_5_ai_mo_b_2022_2023"
+      ],
+      "pattern_vi": "Đọc giờ trên mặt đồng hồ, suy luận ngày tháng hoặc trừ hai mốc thời gian.",
+      "target_visualization": "clock_calendar_timeline",
+      "status": "implemented_sft",
+      "current_renderer": "calendar",
+      "dataset_family": "time_calendar_duration",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "measurement_conversion_comparison",
+      "label_vi": "Đổi và so sánh đơn vị đo",
+      "grades": [
+        2,
+        4,
+        5
+      ],
+      "domain": "measurement",
+      "observed_in": [
+        "exam_grade_2_ngoc_lam_2022_2023",
+        "exam_grade_4_ngoc_lam_2022_2023",
+        "exam_grade_5_ai_mo_b_2022_2023"
+      ],
+      "pattern_vi": "Đổi độ dài, khối lượng, diện tích hoặc thể tích rồi so sánh.",
+      "target_visualization": "unit_scale",
+      "status": "implemented_sft",
+      "current_renderer": "unit_scale",
+      "dataset_family": "measurement_conversion_comparison",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "multiplication_equal_groups",
+      "label_vi": "Phép nhân bằng các nhóm bằng nhau",
+      "grades": [
+        2,
+        3
+      ],
+      "domain": "arithmetic",
+      "observed_in": [
+        "exam_grade_2_ngoc_lam_2022_2023",
+        "exam_grade_3_ngoc_lam_2022_2023"
+      ],
+      "pattern_vi": "Đếm tổng từ số nhóm và số phần tử trong mỗi nhóm.",
+      "target_visualization": "grouping",
+      "status": "implemented_sft",
+      "current_renderer": "grouping",
+      "dataset_family": "multiplication_grouping",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "division_equal_groups",
+      "label_vi": "Phép chia bằng chia đều hoặc chia nhóm",
+      "grades": [
+        2,
+        3
+      ],
+      "domain": "arithmetic",
+      "observed_in": [
+        "exam_grade_2_ngoc_lam_2022_2023",
+        "exam_grade_3_ngoc_lam_2022_2023"
+      ],
+      "pattern_vi": "Tách tổng số vật thành các nhóm cùng cỡ hoặc phần bằng nhau.",
+      "target_visualization": "grouping",
+      "status": "implemented_sft",
+      "current_renderer": "grouping",
+      "dataset_family": "division_grouping",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "picture_bar_chart_reading",
+      "label_vi": "Đọc biểu đồ tranh, bảng và biểu đồ cột",
+      "grades": [
+        2,
+        9
+      ],
+      "domain": "statistics",
+      "observed_in": [
+        "exam_grade_2_ngoc_lam_2022_2023",
+        "exam_grade_9_ntt_2025_2026"
+      ],
+      "pattern_vi": "Đếm theo chú giải, cộng tần số hoặc so sánh các cột và nhóm.",
+      "target_visualization": "data_chart",
+      "status": "implemented_sft",
+      "current_renderer": "data_chart",
+      "dataset_family": "picture_bar_chart_reading",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "rectangle_perimeter",
+      "label_vi": "Chu vi hình chữ nhật",
+      "grades": [
+        3
+      ],
+      "domain": "geometry_2d",
+      "observed_in": [
+        "exam_grade_3_ngoc_lam_2022_2023"
+      ],
+      "pattern_vi": "Dùng chiều dài và chiều rộng để tính đường bao, có thể trừ phần cổng.",
+      "target_visualization": "geometry_2d",
+      "status": "implemented_sft",
+      "current_renderer": "geometry_2d",
+      "dataset_family": "rectangle_perimeter",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "circle_radius_diameter",
+      "label_vi": "Bán kính và đường kính hình tròn",
+      "grades": [
+        3,
+        5
+      ],
+      "domain": "geometry_2d",
+      "observed_in": [
+        "exam_grade_3_ngoc_lam_2022_2023",
+        "exam_grade_5_ai_mo_b_2022_2023"
+      ],
+      "pattern_vi": "Nhận quan hệ bán kính-đường kính hoặc dùng bán kính trong công thức hình tròn.",
+      "target_visualization": "geometry_2d",
+      "status": "implemented_sft",
+      "current_renderer": "geometry_2d",
+      "dataset_family": "circle_radius_diameter",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "multi_step_arithmetic_word",
+      "label_vi": "Bài toán lời văn nhiều bước",
+      "grades": [
+        3
+      ],
+      "domain": "arithmetic",
+      "observed_in": [
+        "exam_grade_3_ngoc_lam_2022_2023"
+      ],
+      "pattern_vi": "Nhân để tìm phần đã có rồi trừ khỏi tổng dự kiến.",
+      "target_visualization": "multi_stage_bar_model",
+      "status": "implemented_sft",
+      "current_renderer": "bar_model",
+      "dataset_family": "multi_step_arithmetic_word",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "fraction_equivalence",
+      "label_vi": "Phân số bằng nhau và điền tử số",
+      "grades": [
+        4
+      ],
+      "domain": "fraction",
+      "observed_in": [
+        "exam_grade_4_ngoc_lam_2022_2023",
+        "exam_grade_6_ntt_2025_2026"
+      ],
+      "pattern_vi": "Chia lại cùng một lượng thành nhiều phần hơn để tìm tử số tương ứng.",
+      "target_visualization": "fraction",
+      "status": "implemented_sft",
+      "current_renderer": "fraction",
+      "dataset_family": "fraction_equivalence",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "fraction_addition",
+      "label_vi": "Cộng phân số",
+      "grades": [
+        4,
+        6
+      ],
+      "domain": "fraction",
+      "observed_in": [
+        "exam_grade_4_ngoc_lam_2022_2023",
+        "exam_grade_6_ntt_2025_2026"
+      ],
+      "pattern_vi": "Quy đồng, ghép các phần cùng cỡ và rút gọn.",
+      "target_visualization": "fraction",
+      "status": "implemented_sft",
+      "current_renderer": "fraction",
+      "dataset_family": "fraction_addition",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "fraction_subtraction",
+      "label_vi": "Trừ phân số",
+      "grades": [
+        4,
+        6
+      ],
+      "domain": "fraction",
+      "observed_in": [
+        "exam_grade_4_ngoc_lam_2022_2023",
+        "exam_grade_6_ntt_2025_2026"
+      ],
+      "pattern_vi": "Quy đồng rồi bớt các phần cùng kích thước.",
+      "target_visualization": "fraction",
+      "status": "implemented_sft",
+      "current_renderer": "fraction",
+      "dataset_family": "fraction_subtraction",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "fraction_multiplication",
+      "label_vi": "Nhân phân số",
+      "grades": [
+        4,
+        6
+      ],
+      "domain": "fraction",
+      "observed_in": [
+        "exam_grade_4_ngoc_lam_2022_2023",
+        "exam_grade_6_ntt_2025_2026"
+      ],
+      "pattern_vi": "Lấy một phần của một phần bằng vùng giao của hai lớp chia.",
+      "target_visualization": "fraction",
+      "status": "implemented_sft",
+      "current_renderer": "fraction",
+      "dataset_family": "fraction_multiplication",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "fraction_division",
+      "label_vi": "Chia phân số",
+      "grades": [
+        4,
+        6
+      ],
+      "domain": "fraction",
+      "observed_in": [
+        "exam_grade_4_ngoc_lam_2022_2023",
+        "exam_grade_6_ntt_2025_2026"
+      ],
+      "pattern_vi": "Tìm có bao nhiêu phần cỡ bằng số chia nằm trong số bị chia.",
+      "target_visualization": "fraction",
+      "status": "implemented_sft",
+      "current_renderer": "fraction",
+      "dataset_family": "fraction_division",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "ratio_total_parts",
+      "label_vi": "Tìm hai số khi biết tổng và tỉ số",
+      "grades": [
+        4
+      ],
+      "domain": "ratio",
+      "observed_in": [
+        "exam_grade_4_ngoc_lam_2022_2023"
+      ],
+      "pattern_vi": "Tổng được chia thành hai nhóm phần theo tỉ số rồi tìm từng đại lượng.",
+      "target_visualization": "bar_model",
+      "status": "implemented_sft",
+      "current_renderer": "bar_model",
+      "dataset_family": "ratio_total_parts",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "map_scale",
+      "label_vi": "Tỉ lệ bản đồ",
+      "grades": [
+        4
+      ],
+      "domain": "ratio",
+      "observed_in": [
+        "exam_grade_4_ngoc_lam_2022_2023"
+      ],
+      "pattern_vi": "Đổi độ dài trên bản đồ sang độ dài thực theo tỉ lệ thu nhỏ.",
+      "target_visualization": "scale_map_ruler",
+      "status": "implemented_sft",
+      "current_renderer": "unit_scale",
+      "dataset_family": "map_scale",
+      "priority": "P1",
+      "gap": null
+    },
+    {
+      "id": "arithmetic_mean",
+      "label_vi": "Trung bình cộng",
+      "grades": [
+        4
+      ],
+      "domain": "statistics",
+      "observed_in": [
+        "exam_grade_4_ngoc_lam_2022_2023"
+      ],
+      "pattern_vi": "Dùng tổng và số phần tử để tìm trung bình hoặc suy ra các số còn thiếu.",
+      "target_visualization": "generic_equalization_mean",
+      "status": "implemented_sft",
+      "current_renderer": "bar_model",
+      "dataset_family": "arithmetic_mean",
+      "priority": "P1",
+      "gap": null
+    },
+    {
+      "id": "rhombus_parallelogram_area_properties",
+      "label_vi": "Hình thoi, hình bình hành và diện tích",
+      "grades": [
+        4
+      ],
+      "domain": "geometry_2d",
+      "observed_in": [
+        "exam_grade_4_ngoc_lam_2022_2023"
+      ],
+      "pattern_vi": "Nhận quan hệ song song, vuông góc, chiều cao và tính diện tích hình đặc biệt.",
+      "target_visualization": "geometry_2d",
+      "status": "implemented_sft",
+      "current_renderer": "geometry_2d",
+      "dataset_family": "rhombus_parallelogram_area_properties",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "divisibility_common_multiple",
+      "label_vi": "Chia hết và bội chung trong tình huống nhóm",
+      "grades": [
+        4
+      ],
+      "domain": "number",
+      "observed_in": [
+        "exam_grade_4_ngoc_lam_2022_2023"
+      ],
+      "pattern_vi": "Tìm số thỏa đồng thời nhiều điều kiện chia nhóm không dư.",
+      "target_visualization": "factor_multiple_lattice",
+      "status": "implemented_sft",
+      "current_renderer": "factor_lattice",
+      "dataset_family": "divisibility_common_multiple",
+      "priority": "P1",
+      "gap": null
+    },
+    {
+      "id": "decimal_read_write",
+      "label_vi": "Đọc, viết và cấu tạo số thập phân",
+      "grades": [
+        5
+      ],
+      "domain": "number",
+      "observed_in": [
+        "exam_grade_5_ai_mo_b_2022_2023"
+      ],
+      "pattern_vi": "Ghép phần nguyên, phần mười, phần trăm và phần nghìn thành số thập phân.",
+      "target_visualization": "place_value",
+      "status": "implemented_sft",
+      "current_renderer": "place_value",
+      "dataset_family": "decimal_read_write",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "decimal_arithmetic",
+      "label_vi": "Bốn phép tính với số thập phân",
+      "grades": [
+        5,
+        6
+      ],
+      "domain": "arithmetic",
+      "observed_in": [
+        "exam_grade_5_ai_mo_b_2022_2023",
+        "exam_grade_6_ntt_2025_2026"
+      ],
+      "pattern_vi": "Đặt thẳng dấu phẩy rồi cộng, trừ, nhân hoặc chia số thập phân.",
+      "target_visualization": "column_algorithm",
+      "status": "implemented_sft",
+      "current_renderer": "column_algorithm",
+      "dataset_family": "decimal_arithmetic",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "percentage_part_whole",
+      "label_vi": "Tỉ số phần trăm, tìm phần hoặc tìm toàn bộ",
+      "grades": [
+        5,
+        6
+      ],
+      "domain": "ratio",
+      "observed_in": [
+        "exam_grade_5_ai_mo_b_2022_2023",
+        "exam_grade_6_ntt_2025_2026"
+      ],
+      "pattern_vi": "Đổi quan hệ phần-toàn bộ sang 100 phần bằng nhau và suy ra đại lượng chưa biết.",
+      "target_visualization": "percent_grid",
+      "status": "implemented_sft",
+      "current_renderer": "percent_grid",
+      "dataset_family": "percentage_part_whole",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "triangle_area",
+      "label_vi": "Diện tích tam giác từ đáy và chiều cao",
+      "grades": [
+        5
+      ],
+      "domain": "geometry_2d",
+      "observed_in": [
+        "exam_grade_5_ai_mo_b_2022_2023"
+      ],
+      "pattern_vi": "Ghép hoặc cắt để thấy diện tích tam giác bằng một nửa hình bình hành tương ứng.",
+      "target_visualization": "geometry_2d",
+      "status": "implemented_sft",
+      "current_renderer": "geometry_2d",
+      "dataset_family": "triangle_area",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "circle_area",
+      "label_vi": "Diện tích hình tròn",
+      "grades": [
+        5
+      ],
+      "domain": "geometry_2d",
+      "observed_in": [
+        "exam_grade_5_ai_mo_b_2022_2023"
+      ],
+      "pattern_vi": "Dùng bán kính để tính diện tích, cần nhìn thấy quan hệ với các dải tròn hoặc hình gần chữ nhật.",
+      "target_visualization": "circle_area_unroll",
+      "status": "implemented_sft",
+      "current_renderer": "circle_model",
+      "dataset_family": "circle_area",
+      "priority": "P1",
+      "gap": null
+    },
+    {
+      "id": "cuboid_volume",
+      "label_vi": "Thể tích hình hộp chữ nhật",
+      "grades": [
+        5
+      ],
+      "domain": "geometry_3d",
+      "observed_in": [
+        "exam_grade_5_ai_mo_b_2022_2023"
+      ],
+      "pattern_vi": "Ghép các lớp khối lập phương theo dài, rộng và cao.",
+      "target_visualization": "geometry_3d",
+      "status": "implemented_sft",
+      "current_renderer": "geometry_3d",
+      "dataset_family": "cuboid_volume",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "single_leg_motion",
+      "label_vi": "Quãng đường, vận tốc và thời gian một chặng",
+      "grades": [
+        5
+      ],
+      "domain": "motion",
+      "observed_in": [
+        "exam_grade_5_ai_mo_b_2022_2023"
+      ],
+      "pattern_vi": "Tính một trong ba đại lượng, có thể trừ thời gian nghỉ khỏi khoảng giờ.",
+      "target_visualization": "motion_path",
+      "status": "implemented_sft",
+      "current_renderer": "motion_path",
+      "dataset_family": "distance_speed_time",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "signed_decimal_fraction_ordering",
+      "label_vi": "Sắp xếp số âm, số thập phân và phân số",
+      "grades": [
+        6
+      ],
+      "domain": "number",
+      "observed_in": [
+        "exam_grade_6_ntt_2025_2026"
+      ],
+      "pattern_vi": "Đặt các số hữu tỉ có dạng viết khác nhau lên cùng một trục để so sánh.",
+      "target_visualization": "number_compare",
+      "status": "implemented_sft",
+      "current_renderer": "number_compare",
+      "dataset_family": "signed_decimal_fraction_ordering",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "mixed_rational_arithmetic_percent",
+      "label_vi": "Biểu thức hữu tỉ hỗn hợp có phần trăm",
+      "grades": [
+        6
+      ],
+      "domain": "fraction",
+      "observed_in": [
+        "exam_grade_6_ntt_2025_2026"
+      ],
+      "pattern_vi": "Tính biểu thức nhiều tầng gồm phân số, thập phân, phần trăm và thứ tự phép tính.",
+      "target_visualization": "expression_tree_fraction",
+      "status": "implemented_sft",
+      "current_renderer": "expression_tree",
+      "dataset_family": "mixed_rational_arithmetic_percent",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "linear_equation",
+      "label_vi": "Phương trình bậc nhất một ẩn dạng ax+b=c",
+      "grades": [
+        6,
+        8
+      ],
+      "domain": "algebra",
+      "observed_in": [
+        "exam_grade_6_ntt_2025_2026",
+        "exam_grade_8_ntt_2025_2026"
+      ],
+      "pattern_vi": "Thực hiện cùng phép biến đổi trên hai vế để cô lập ẩn.",
+      "target_visualization": "balance",
+      "status": "implemented_sft",
+      "current_renderer": "balance",
+      "dataset_family": "linear_equation",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "discount_tax_percentage",
+      "label_vi": "Giảm giá và thuế phần trăm nhiều bước",
+      "grades": [
+        6
+      ],
+      "domain": "ratio",
+      "observed_in": [
+        "exam_grade_6_ntt_2025_2026"
+      ],
+      "pattern_vi": "Áp dụng phần trăm giảm giá rồi phần trăm thuế hoặc suy ngược giá niêm yết.",
+      "target_visualization": "percent_waterfall",
+      "status": "implemented_sft",
+      "current_renderer": "percent_grid",
+      "dataset_family": "discount_tax_percentage",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "ray_segment_midpoint",
+      "label_vi": "Tia, điểm nằm giữa, độ dài đoạn thẳng và trung điểm",
+      "grades": [
+        6
+      ],
+      "domain": "geometry_2d",
+      "observed_in": [
+        "exam_grade_6_ntt_2025_2026"
+      ],
+      "pattern_vi": "Đặt điểm trên hai tia đối, tính đoạn còn lại và kiểm tra trung điểm.",
+      "target_visualization": "geometry_2d",
+      "status": "implemented_sft",
+      "current_renderer": "geometry_2d",
+      "dataset_family": "ray_segment_midpoint",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "polynomial_evaluate_reorder",
+      "label_vi": "Thu gọn, sắp xếp, tính giá trị và kiểm tra nghiệm đa thức",
+      "grades": [
+        7
+      ],
+      "domain": "algebra",
+      "observed_in": [
+        "exam_grade_7_ntt_2025_2026"
+      ],
+      "pattern_vi": "Sắp hạng tử theo bậc, thế giá trị và kiểm tra đa thức có bằng 0.",
+      "target_visualization": "algebra_tiles",
+      "status": "implemented_sft",
+      "current_renderer": "algebra_tiles",
+      "dataset_family": "polynomial_evaluate_reorder",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "proportional_system_two_variables",
+      "label_vi": "Tỉ lệ thức kết hợp tổng hoặc hiệu hai đại lượng",
+      "grades": [
+        7
+      ],
+      "domain": "ratio",
+      "observed_in": [
+        "exam_grade_7_ntt_2025_2026"
+      ],
+      "pattern_vi": "Dùng dãy tỉ số bằng nhau cùng một quan hệ tổng-hiệu để tìm hai biến.",
+      "target_visualization": "linked_ratio_bars",
+      "status": "implemented_sft",
+      "current_renderer": "bar_model",
+      "dataset_family": "proportional_system_two_variables",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "multi_segment_equal_distance_motion",
+      "label_vi": "Chuyển động nhiều chặng cùng quãng đường",
+      "grades": [
+        7
+      ],
+      "domain": "motion",
+      "observed_in": [
+        "exam_grade_7_ntt_2025_2026"
+      ],
+      "pattern_vi": "Nhiều chặng bằng nhau có vận tốc khác nhau, thời gian liên hệ bằng một phương trình.",
+      "target_visualization": "segmented_motion_path",
+      "status": "implemented_sft",
+      "current_renderer": "motion_path",
+      "dataset_family": "multi_segment_equal_distance_motion",
+      "priority": "P1",
+      "gap": null
+    },
+    {
+      "id": "polynomial_add_subtract",
+      "label_vi": "Cộng và trừ đa thức",
+      "grades": [
+        7
+      ],
+      "domain": "algebra",
+      "observed_in": [
+        "exam_grade_7_ntt_2025_2026"
+      ],
+      "pattern_vi": "Gom các hạng tử đồng dạng theo từng bậc.",
+      "target_visualization": "algebra_tiles",
+      "status": "implemented_sft",
+      "current_renderer": "algebra_tiles",
+      "dataset_family": "polynomial_add_subtract",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "algebraic_expression_modeling",
+      "label_vi": "Lập biểu thức từ tình huống",
+      "grades": [
+        7
+      ],
+      "domain": "algebra",
+      "observed_in": [
+        "exam_grade_7_ntt_2025_2026"
+      ],
+      "pattern_vi": "Biểu diễn tổng chi phí hoặc đại lượng bằng hằng số và biến.",
+      "target_visualization": "symbolic_quantity_model",
+      "status": "implemented_sft",
+      "current_renderer": "algebra_tiles",
+      "dataset_family": "algebraic_expression_modeling",
+      "priority": "P1",
+      "gap": null
+    },
+    {
+      "id": "triangle_congruence_centroid_proof",
+      "label_vi": "Tam giác bằng nhau, trung tuyến và trọng tâm",
+      "grades": [
+        7
+      ],
+      "domain": "geometry_2d",
+      "observed_in": [
+        "exam_grade_7_ntt_2025_2026"
+      ],
+      "pattern_vi": "Chứng minh bằng nhau, suy tam giác cân và dùng tỉ lệ trọng tâm trên trung tuyến.",
+      "target_visualization": "constraint_geometry_proof",
+      "status": "implemented_sft",
+      "current_renderer": "geometry_2d",
+      "dataset_family": "triangle_congruence_centroid_proof",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "linear_function",
+      "label_vi": "Giá trị và đồ thị hàm số bậc nhất",
+      "grades": [
+        8
+      ],
+      "domain": "algebra",
+      "observed_in": [
+        "exam_grade_8_ntt_2025_2026"
+      ],
+      "pattern_vi": "Lập bảng giá trị, đặt hai điểm và vẽ đường thẳng y=mx+b.",
+      "target_visualization": "coordinate_graph",
+      "status": "implemented_sft",
+      "current_renderer": "coordinate_graph",
+      "dataset_family": "linear_function",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "compound_linear_equation",
+      "label_vi": "Phương trình có hằng đẳng thức hoặc mẫu số",
+      "grades": [
+        8
+      ],
+      "domain": "algebra",
+      "observed_in": [
+        "exam_grade_8_ntt_2025_2026"
+      ],
+      "pattern_vi": "Khai triển, quy đồng hoặc rút gọn trước khi đưa về phương trình bậc nhất.",
+      "target_visualization": "expression_tree_balance",
+      "status": "implemented_sft",
+      "current_renderer": "balance",
+      "dataset_family": "compound_linear_equation",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "word_equation_rectangle",
+      "label_vi": "Lập phương trình từ thay đổi kích thước hình chữ nhật",
+      "grades": [
+        8
+      ],
+      "domain": "algebra",
+      "observed_in": [
+        "exam_grade_8_ntt_2025_2026"
+      ],
+      "pattern_vi": "Thay đổi chiều dài, chiều rộng và diện tích để lập phương trình tìm kích thước ban đầu.",
+      "target_visualization": "linked_geometry_balance",
+      "status": "implemented_sft",
+      "current_renderer": "balance",
+      "dataset_family": "word_equation_rectangle",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "experimental_probability",
+      "label_vi": "Xác suất thực nghiệm từ bảng kết quả",
+      "grades": [
+        8
+      ],
+      "domain": "probability",
+      "observed_in": [
+        "exam_grade_8_ntt_2025_2026"
+      ],
+      "pattern_vi": "Lấy số lần biến cố xảy ra chia tổng số phép thử từ một hoặc nhiều người.",
+      "target_visualization": "probability_simulator",
+      "status": "implemented_sft",
+      "current_renderer": "probability_simulator",
+      "dataset_family": "experimental_probability",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "triangle_similarity_metric_relation",
+      "label_vi": "Tam giác đồng dạng và hệ thức lượng",
+      "grades": [
+        8
+      ],
+      "domain": "geometry_2d",
+      "observed_in": [
+        "exam_grade_8_ntt_2025_2026"
+      ],
+      "pattern_vi": "Chứng minh cặp tam giác đồng dạng rồi suy tỉ lệ hoặc hệ thức bình phương cạnh.",
+      "target_visualization": "similarity_proof_geometry",
+      "status": "implemented_sft",
+      "current_renderer": "geometry_2d",
+      "dataset_family": "triangle_similarity_metric_relation",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "quadratic_function_graph",
+      "label_vi": "Đồ thị hàm số bậc hai",
+      "grades": [
+        9
+      ],
+      "domain": "algebra",
+      "observed_in": [
+        "exam_grade_9_ntt_2025_2026"
+      ],
+      "pattern_vi": "Lập bảng điểm, vẽ parabol và tìm giao với một quan hệ tọa độ khác.",
+      "target_visualization": "coordinate_graph",
+      "status": "implemented_sft",
+      "current_renderer": "coordinate_graph",
+      "dataset_family": "quadratic_function_graph",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "quadratic_equation_vieta",
+      "label_vi": "Phương trình bậc hai và hệ thức Viète",
+      "grades": [
+        9
+      ],
+      "domain": "algebra",
+      "observed_in": [
+        "exam_grade_9_ntt_2025_2026"
+      ],
+      "pattern_vi": "Kiểm tra biệt thức, dùng tổng-tích nghiệm và biến đổi biểu thức đối xứng.",
+      "target_visualization": "coordinate_graph",
+      "status": "implemented_sft",
+      "current_renderer": "coordinate_graph",
+      "dataset_family": "quadratic_equation_vieta",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "statistics_probability_from_chart",
+      "label_vi": "Thống kê và xác suất từ biểu đồ cột kép",
+      "grades": [
+        9
+      ],
+      "domain": "statistics",
+      "observed_in": [
+        "exam_grade_9_ntt_2025_2026"
+      ],
+      "pattern_vi": "Cộng tần số theo nhóm rồi tính xác suất chọn ngẫu nhiên.",
+      "target_visualization": "data_chart",
+      "status": "implemented_sft",
+      "current_renderer": "data_chart",
+      "dataset_family": "statistics_probability_from_chart",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "cylinder_cone_sphere_volume",
+      "label_vi": "Thể tích hình trụ, hình nón và hình cầu",
+      "grades": [
+        9
+      ],
+      "domain": "geometry_3d",
+      "observed_in": [
+        "exam_grade_9_ntt_2025_2026"
+      ],
+      "pattern_vi": "Tính, so sánh hoặc chia thể tích giữa vật chứa dạng trụ, nón và cầu.",
+      "target_visualization": "geometry_3d",
+      "status": "implemented_sft",
+      "current_renderer": "geometry_3d",
+      "dataset_family": "cylinder_cone_sphere_volume",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "circle_tangent_cyclic_proof",
+      "label_vi": "Tiếp tuyến, tứ giác nội tiếp và hệ thức đường tròn",
+      "grades": [
+        9
+      ],
+      "domain": "geometry_2d",
+      "observed_in": [
+        "exam_grade_9_ntt_2025_2026"
+      ],
+      "pattern_vi": "Dựng hai tiếp tuyến, đường kính, giao điểm rồi chứng minh nội tiếp và hệ thức tích đoạn.",
+      "target_visualization": "circle_constraint_proof",
+      "status": "implemented_sft",
+      "current_renderer": "circle_model",
+      "dataset_family": "circle_tangent_cyclic_proof",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "angle_bisector",
+      "label_vi": "Tia phân giác và số đo hai góc bằng nhau",
+      "grades": [
+        7
+      ],
+      "domain": "geometry_2d",
+      "observed_in": [
+        "user_angle_bisector_grade_7"
+      ],
+      "pattern_vi": "Cho số đo một góc và một tia phân giác, tìm số đo một trong hai góc được chia.",
+      "target_visualization": "geometry_2d",
+      "status": "implemented_sft",
+      "current_renderer": "geometry_2d",
+      "dataset_family": "angle_bisector",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "sequential_fraction_remainder_ratio",
+      "label_vi": "Phân số liên tiếp trên phần còn lại và so sánh tỉ số",
+      "grades": [
+        7
+      ],
+      "domain": "ratio",
+      "observed_in": [
+        "user_sequential_rice_ratio_grade_7"
+      ],
+      "pattern_vi": "Lần đầu lấy một phân số của toàn bộ, lần sau lấy một phân số của phần còn lại, rồi so sánh lần cuối với lần đầu.",
+      "target_visualization": "bar_model",
+      "status": "implemented_sft",
+      "current_renderer": "bar_model",
+      "dataset_family": "sequential_fraction_remainder_ratio",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "sequential_fraction_remainder_quantity",
+      "label_vi": "Hai phân số liên tiếp trên phần còn lại và tìm lượng cuối",
+      "grades": [
+        6
+      ],
+      "domain": "ratio",
+      "observed_in": [
+        "user_mixed_area_remainder_grade_6"
+      ],
+      "pattern_vi": "Ghép tổng đại lượng, lấy một phân số của toàn bộ, tiếp tục lấy một phân số của phần còn lại rồi tìm phần cuối cùng.",
+      "target_visualization": "bar_model",
+      "status": "implemented_sft",
+      "current_renderer": "bar_model",
+      "dataset_family": "sequential_fraction_remainder_quantity",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "fraction_power",
+      "label_vi": "Lũy thừa của phân số âm",
+      "grades": [
+        7
+      ],
+      "domain": "algebra",
+      "observed_in": [
+        "user_fraction_power_grade_7"
+      ],
+      "pattern_vi": "Viết tích lặp, xác định dấu theo chẵn-lẻ rồi lũy thừa riêng tử và mẫu.",
+      "target_visualization": "power_model",
+      "status": "implemented_sft",
+      "current_renderer": "power_model",
+      "dataset_family": "fraction_power",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "work_rate_with_variable_people",
+      "label_vi": "Thay đổi số người và tỉ lệ nghịch với thời gian hoàn thành",
+      "grades": [
+        5
+      ],
+      "domain": "ratio",
+      "observed_in": [
+        "user_variable_people_work_rate_grade_5"
+      ],
+      "pattern_vi": "Giữ nguyên khối lượng công việc khi số người tăng hoặc giảm và năng suất mỗi người bằng nhau.",
+      "target_visualization": "bar_model",
+      "status": "implemented_sft",
+      "current_renderer": "bar_model",
+      "dataset_family": "work_rate_with_variable_people",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "linear_inequality_one_variable",
+      "label_vi": "Bất phương trình bậc nhất một ẩn",
+      "grades": [
+        9
+      ],
+      "domain": "algebra",
+      "observed_in": [
+        "user_grade9_midterm_exam_2026_08_28"
+      ],
+      "pattern_vi": "Giải bất phương trình bậc nhất rồi biểu diễn miền nghiệm trên trục số với đúng đầu mút đóng hoặc mở.",
+      "target_visualization": "solution_set",
+      "status": "implemented_sft",
+      "current_renderer": "solution_set",
+      "dataset_family": "linear_inequality_one_variable",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "product_equation_roots",
+      "label_vi": "Phương trình tích và tập nghiệm",
+      "grades": [
+        9
+      ],
+      "domain": "algebra",
+      "observed_in": [
+        "user_grade9_midterm_exam_2026_08_28"
+      ],
+      "pattern_vi": "Đưa phương trình về dạng tích bằng không, giải từng thừa số và đánh dấu toàn bộ nghiệm trên trục số.",
+      "target_visualization": "solution_set",
+      "status": "implemented_sft",
+      "current_renderer": "solution_set",
+      "dataset_family": "product_equation_roots",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "rational_equation_domain",
+      "label_vi": "Điều kiện xác định của phương trình phân thức",
+      "grades": [
+        9
+      ],
+      "domain": "algebra",
+      "observed_in": [
+        "user_grade9_midterm_exam_2026_08_28"
+      ],
+      "pattern_vi": "Tìm các giá trị làm mẫu bằng không, loại chúng khỏi miền xác định và thể hiện bằng điểm rỗng trên trục số.",
+      "target_visualization": "solution_set",
+      "status": "implemented_sft",
+      "current_renderer": "solution_set",
+      "dataset_family": "rational_equation_domain",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "fractional_linear_equation",
+      "label_vi": "Phương trình bậc nhất có phân số ở hệ số",
+      "grades": [8, 9],
+      "domain": "algebra",
+      "observed_in": ["user_grade_1_9_taxonomy_2026_08_31"],
+      "pattern_vi": "Tìm bội chung nhỏ nhất, nhân cả hai vế để khử mẫu số rồi giải phương trình bậc nhất tương đương.",
+      "target_visualization": "balance",
+      "status": "renderer_ready",
+      "current_renderer": "balance",
+      "dataset_family": null,
+      "priority": "P0",
+      "gap": "Chưa có họ dữ liệu SFT riêng; parser, bộ giải và renderer xác định đã sẵn sàng."
+    },
+    {
+      "id": "absolute_value_equation",
+      "label_vi": "Phương trình giá trị tuyệt đối một ẩn",
+      "grades": [8, 9],
+      "domain": "algebra",
+      "observed_in": ["user_grade_1_9_taxonomy_2026_08_31"],
+      "pattern_vi": "Tách hai nhánh tuyến tính, giải từng nhánh và đánh dấu toàn bộ nghiệm hợp lệ bằng điểm đặc.",
+      "target_visualization": "solution_set",
+      "status": "renderer_ready",
+      "current_renderer": "solution_set",
+      "dataset_family": null,
+      "priority": "P0",
+      "gap": "Chưa có họ dữ liệu SFT riêng; parser, bộ giải và renderer xác định đã sẵn sàng."
+    },
+    {
+      "id": "biquadratic_equation",
+      "label_vi": "Phương trình trùng phương",
+      "grades": [9],
+      "domain": "algebra",
+      "observed_in": ["user_grade_1_9_taxonomy_2026_08_31"],
+      "pattern_vi": "Đặt t = x² với t không âm, giải phương trình bậc hai theo t rồi trở lại các nghiệm x đối xứng.",
+      "target_visualization": "solution_set",
+      "status": "renderer_ready",
+      "current_renderer": "solution_set",
+      "dataset_family": null,
+      "priority": "P0",
+      "gap": "Chưa có họ dữ liệu SFT riêng; parser, bộ giải và renderer xác định đã sẵn sàng."
+    },
+    {
+      "id": "radical_equation",
+      "label_vi": "Phương trình chứa căn bậc hai",
+      "grades": [9],
+      "domain": "algebra",
+      "observed_in": ["user_grade_1_9_taxonomy_2026_08_31"],
+      "pattern_vi": "Đặt điều kiện, bình phương hai vế, giải phương trình ứng viên rồi thử lại để loại nghiệm ngoại lai.",
+      "target_visualization": "solution_set",
+      "status": "renderer_ready",
+      "current_renderer": "solution_set",
+      "dataset_family": null,
+      "priority": "P0",
+      "gap": "Chưa có họ dữ liệu SFT riêng; parser, bộ giải và renderer xác định đã sẵn sàng."
+    },
+    {
+      "id": "rational_equation",
+      "label_vi": "Phương trình hữu tỉ có ẩn ở mẫu",
+      "grades": [9],
+      "domain": "algebra",
+      "observed_in": ["user_grade_1_9_taxonomy_2026_08_31"],
+      "pattern_vi": "Đặt điều kiện mẫu khác không, quy đồng khử mẫu, giải phương trình tử và loại nghiệm vi phạm miền xác định.",
+      "target_visualization": "solution_set",
+      "status": "renderer_ready",
+      "current_renderer": "solution_set",
+      "dataset_family": null,
+      "priority": "P0",
+      "gap": "Parser hiện hỗ trợ tối đa hai mẫu thức tuyến tính khác nhau và tử sau quy đồng có bậc không quá hai."
+    },
+    {
+      "id": "angle_of_depression_distance",
+      "label_vi": "Góc hạ từ độ cao và khoảng cách ngang",
+      "grades": [
+        9
+      ],
+      "domain": "geometry_2d",
+      "observed_in": [
+        "user_grade9_midterm_exam_2026_08_28"
+      ],
+      "pattern_vi": "Cho độ cao và góc hạ hoặc góc nâng, dựng tam giác vuông và tính khoảng cách ngang bằng tỉ số lượng giác.",
+      "target_visualization": "geometry_2d",
+      "status": "implemented_sft",
+      "current_renderer": "geometry_2d",
+      "dataset_family": "angle_of_depression_distance",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "oblique_triangle_altitude_solution",
+      "label_vi": "Giải tam giác nhờ đường cao",
+      "grades": [
+        9
+      ],
+      "domain": "geometry_2d",
+      "observed_in": [
+        "user_grade9_midterm_exam_2026_08_28"
+      ],
+      "pattern_vi": "Cho đường cao và hai góc đáy, chia tam giác thành hai tam giác vuông rồi tính các cạnh.",
+      "target_visualization": "geometry_2d",
+      "status": "implemented_sft",
+      "current_renderer": "geometry_2d",
+      "dataset_family": "oblique_triangle_altitude_solution",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "parallelogram_perpendicular_diagonal_area",
+      "label_vi": "Diện tích hình bình hành có đường chéo vuông góc",
+      "grades": [
+        9
+      ],
+      "domain": "geometry_2d",
+      "observed_in": [
+        "user_grade9_midterm_exam_2026_08_28"
+      ],
+      "pattern_vi": "Cho cạnh, góc và đường chéo vuông góc với cạnh; dựng đường chéo làm chiều cao rồi tính diện tích.",
+      "target_visualization": "geometry_2d",
+      "status": "implemented_sft",
+      "current_renderer": "geometry_2d",
+      "dataset_family": "parallelogram_perpendicular_diagonal_area",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "two_item_discount_system",
+      "label_vi": "Hệ hai giá niêm yết với hai mức giảm giá",
+      "grades": [
+        9
+      ],
+      "domain": "algebra",
+      "observed_in": [
+        "user_grade9_midterm_exam_2026_08_28"
+      ],
+      "pattern_vi": "Đặt hai giá niêm yết là hai ẩn, lập phương trình tổng giá và phương trình tổng tiền sau hai mức giảm khác nhau, rồi kiểm tra khẳng định giá.",
+      "target_visualization": "percent_grid",
+      "status": "implemented_sft",
+      "current_renderer": "percent_grid",
+      "dataset_family": "two_item_discount_system",
+      "priority": "P0",
+      "gap": null
+    },
+    {
+      "id": "quadratic_surface_three_variables",
+      "label_vi": "Mặt nghiệm bậc hai theo ba biến x, y, z",
+      "grades": [
+        9
+      ],
+      "domain": "geometry_3d",
+      "observed_in": [
+        "user_xyz_equation_2026_08_28"
+      ],
+      "pattern_vi": "Biểu diễn phương trình có đúng một biến bình phương và ba biến trên hệ trục Oxyz bằng lưới mặt cong.",
+      "target_visualization": "geometry_3d",
+      "status": "implemented_sft",
+      "current_renderer": "geometry_3d",
+      "dataset_family": "quadratic_surface_three_variables",
+      "priority": "P0",
+      "gap": null
+    }
+  ]
+}

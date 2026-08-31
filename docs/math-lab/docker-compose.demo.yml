@@ -1,0 +1,306 @@
+name: eduvision-math-lab-isolated
+
+# Isolated Math Lab demo stack.
+#
+# Every image, container, network and volume uses a Math-Lab-only name so a
+# `docker compose up/down` executed from another EduVisionAI checkout cannot
+# replace or stop the customer demo on port 8443.
+
+services:
+  nats:
+    build:
+      context: ../../message_broker
+      dockerfile: Dockerfile
+      args:
+        NATS_UID: 1004
+        NATS_GID: 1004
+    image: eduvision-mathlab-nats:local
+    command: ["--config", "/etc/nats/nats-server.conf"]
+    volumes:
+      - ../../message_broker/config/nats-server.conf:/etc/nats/nats-server.conf:ro
+      - nats-data:/data/jetstream
+    secrets:
+      - source: nats_ca_cert
+        target: nats-ca.crt
+      - source: nats_server_cert
+        target: nats-server.crt
+      - source: nats_server_key
+        target: nats-server.key
+    group_add: ["1003"]
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O - 'http://127.0.0.1:8222/healthz?js-enabled-only=true' | grep -q '\"status\":\"ok\"'"]
+      interval: 5s
+      timeout: 3s
+      start_period: 10s
+      retries: 10
+    restart: always
+    networks: [math-lab]
+
+  nats-init:
+    image: natsio/nats-box:0.19.7-nonroot
+    depends_on:
+      nats: { condition: service_healthy }
+    entrypoint: ["/bin/sh", "/bootstrap/scripts/bootstrap.sh"]
+    environment:
+      NATS_URL: tls://nats:4222
+      NATS_CA_FILE: /run/secrets/nats-ca.crt
+      NATS_CERT_FILE: /run/secrets/nats-client.crt
+      NATS_KEY_FILE: /run/secrets/nats-client.key
+    volumes:
+      - ../../message_broker/scripts:/bootstrap/scripts:ro
+    secrets:
+      - source: nats_ca_cert
+        target: nats-ca.crt
+      - source: nats_admin_cert
+        target: nats-client.crt
+      - source: nats_admin_key
+        target: nats-client.key
+    group_add: ["1003"]
+    restart: "no"
+    networks: [math-lab]
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: eduvision
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Load data_storage/.env}
+      POSTGRES_DB: eduvision
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U eduvision -d eduvision"]
+      interval: 5s
+      timeout: 3s
+      retries: 15
+    restart: always
+    networks: [math-lab]
+
+  redis:
+    image: redis:7-alpine
+    environment:
+      REDIS_PASSWORD: ${REDIS_PASSWORD:?Load data_storage/.env}
+    command:
+      - redis-server
+      - --appendonly
+      - "yes"
+      - --requirepass
+      - ${REDIS_PASSWORD:?Load data_storage/.env}
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli -a \"$${REDIS_PASSWORD}\" --no-auth-warning ping | grep -q PONG"]
+      interval: 5s
+      timeout: 3s
+      retries: 15
+    restart: always
+    networks: [math-lab]
+
+  minio:
+    image: minio/minio:latest
+    command: server /data --address ":9000" --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ACCESS_KEY:?Load data_storage/.env}
+      MINIO_ROOT_PASSWORD: ${MINIO_SECRET_KEY:?Load data_storage/.env}
+    volumes:
+      - minio-data:/data
+    restart: always
+    networks: [math-lab]
+
+  qdrant:
+    image: qdrant/qdrant:latest
+    environment:
+      QDRANT__SERVICE__API_KEY: ${QDRANT_API_KEY:?Load data_storage/.env}
+    volumes:
+      - qdrant-data:/qdrant/storage
+    restart: always
+    networks: [math-lab]
+
+  data-storage-api:
+    build:
+      context: ../../data_storage
+      dockerfile: Dockerfile
+      args:
+        DATA_STORAGE_UID: 1003
+        DATA_STORAGE_GID: 1003
+    image: eduvision-mathlab-data-storage:local
+    env_file: ../../data_storage/.env
+    environment:
+      HTTPS_ENABLED: "false"
+      NATS_URL: tls://nats:4222
+      POSTGRES_HOST: postgres
+      REDIS_HOST: redis
+      MINIO_ENDPOINT: minio:9000
+      QDRANT_URL: http://qdrant:6333
+    depends_on:
+      nats-init: { condition: service_completed_successfully }
+      postgres: { condition: service_healthy }
+      redis: { condition: service_healthy }
+      minio: { condition: service_started }
+      qdrant: { condition: service_started }
+    secrets:
+      - source: nats_ca_cert
+        target: nats/ca.crt
+      - source: nats_data_storage_cert
+        target: nats/client.crt
+      - source: nats_data_storage_key
+        target: nats/client.key
+      - source: eduvision_ca_cert
+        target: eduvision/ca.crt
+      - source: eduvision_data_storage_cert
+        target: eduvision/server.crt
+      - source: eduvision_data_storage_key
+        target: eduvision/server.key
+    group_add: ["1003"]
+    healthcheck:
+      test: ["CMD", "python", "scripts/healthcheck.py"]
+      interval: 10s
+      timeout: 5s
+      start_period: 30s
+      retries: 10
+    restart: always
+    networks: [math-lab]
+
+  document-renderer:
+    build:
+      context: ../../document_renderer
+      dockerfile: Dockerfile
+      args:
+        RENDERER_UID: 1003
+        RENDERER_GID: 1003
+    image: eduvision-mathlab-document-renderer:local
+    env_file: ../../document_renderer/.env
+    environment:
+      DATA_STORAGE_URL: http://data-storage-api:8080
+      DATA_STORAGE_HTTPS_ENABLED: "false"
+    depends_on:
+      data-storage-api: { condition: service_healthy }
+    secrets:
+      - source: nats_ca_cert
+        target: nats/ca.crt
+      - source: nats_renderer_cert
+        target: nats/client.crt
+      - source: nats_renderer_key
+        target: nats/client.key
+      - source: eduvision_ca_cert
+        target: eduvision/ca.crt
+      - source: eduvision_renderer_cert
+        target: eduvision/client.crt
+      - source: eduvision_renderer_key
+        target: eduvision/client.key
+    group_add: ["1003"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8090/health/ready', timeout=3).read()"]
+      interval: 10s
+      timeout: 5s
+      start_period: 45s
+      retries: 10
+    restart: always
+    networks: [math-lab]
+
+  master-api:
+    build:
+      context: ../../master_be
+      dockerfile: Dockerfile
+      args:
+        BACKEND_UID: 1003
+        BACKEND_GID: 1003
+    image: eduvision-mathlab-master:local
+    env_file: ../../master_be/.env
+    environment:
+      DATA_STORAGE_URL: http://data-storage-api:8080
+      DATA_STORAGE_HTTPS_ENABLED: "false"
+      DOCUMENT_RENDERER_URL: http://document-renderer:8090
+      MATH_LAB_OLLAMA_URL: http://host.docker.internal:11434
+      NATS_ENABLED: "false"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      data-storage-api: { condition: service_healthy }
+      document-renderer: { condition: service_healthy }
+    secrets:
+      - source: nats_ca_cert
+        target: nats/ca.crt
+      - source: nats_master_cert
+        target: nats/client.crt
+      - source: nats_master_key
+        target: nats/client.key
+      - source: eduvision_ca_cert
+        target: eduvision/ca.crt
+      - source: eduvision_master_cert
+        target: eduvision/client.crt
+      - source: eduvision_master_key
+        target: eduvision/client.key
+    group_add: ["1003"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health/ready', timeout=3).read()"]
+      interval: 10s
+      timeout: 5s
+      start_period: 30s
+      retries: 10
+    restart: always
+    networks: [math-lab]
+
+  public-ingress:
+    build:
+      context: ../../frontend
+      dockerfile: Dockerfile
+      args:
+        API_BASE_URL: /api/v1
+        GOOGLE_CLIENT_ID: 139504495012-t2vvo92n9k5m5d1b7ool5a1ve25ngeqa.apps.googleusercontent.com
+    image: eduvision-mathlab-ingress:local
+    depends_on:
+      master-api: { condition: service_healthy }
+    secrets:
+      - source: public_ingress_cert
+        target: ingress/tls.crt
+      - source: public_ingress_key
+        target: ingress/tls.key
+    ports:
+      - "127.0.0.1:8443:443"
+      - "[::1]:8443:443"
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider --no-check-certificate https://127.0.0.1/ingress-health"]
+      interval: 10s
+      timeout: 5s
+      start_period: 10s
+      retries: 10
+    restart: always
+    networks: [math-lab]
+
+networks:
+  math-lab:
+    name: eduvision-math-lab-isolated
+
+volumes:
+  # Demo data is intentionally external. `docker compose down -v` must not be
+  # able to remove teacher accounts, recent Math Lab exercises or feedback.
+  # The first bootstrap creates these names explicitly; subsequent deploys fail
+  # closed if a volume is unexpectedly absent instead of silently starting with
+  # an empty database.
+  nats-data: { external: true, name: eduvision-mathlab-nats-data }
+  postgres-data: { external: true, name: eduvision-mathlab-postgres-data }
+  redis-data: { external: true, name: eduvision-mathlab-redis-data }
+  minio-data: { external: true, name: eduvision-mathlab-minio-data }
+  qdrant-data: { external: true, name: eduvision-mathlab-qdrant-data }
+
+secrets:
+  nats_ca_cert: { file: ../../security/pki/dev/ca/ca.crt }
+  nats_server_cert: { file: ../../security/pki/dev/workloads/nats/tls.crt }
+  nats_server_key: { file: ../../security/pki/dev/workloads/nats/tls.key }
+  nats_data_storage_cert: { file: ../../security/pki/dev/workloads/data-storage/tls.crt }
+  nats_data_storage_key: { file: ../../security/pki/dev/workloads/data-storage/tls.key }
+  nats_admin_cert: { file: ../../security/pki/dev/workloads/nats-admin/tls.crt }
+  nats_admin_key: { file: ../../security/pki/dev/workloads/nats-admin/tls.key }
+  nats_renderer_cert: { file: ../../security/pki/dev/workloads/document-renderer/tls.crt }
+  nats_renderer_key: { file: ../../security/pki/dev/workloads/document-renderer/tls.key }
+  nats_master_cert: { file: ../../security/pki/dev/workloads/master-be/tls.crt }
+  nats_master_key: { file: ../../security/pki/dev/workloads/master-be/tls.key }
+  eduvision_ca_cert: { file: ../../security/pki/dev/ca/ca.crt }
+  eduvision_data_storage_cert: { file: ../../security/pki/dev/workloads/data-storage/tls.crt }
+  eduvision_data_storage_key: { file: ../../security/pki/dev/workloads/data-storage/tls.key }
+  eduvision_renderer_cert: { file: ../../security/pki/dev/workloads/document-renderer/tls.crt }
+  eduvision_renderer_key: { file: ../../security/pki/dev/workloads/document-renderer/tls.key }
+  eduvision_master_cert: { file: ../../security/pki/dev/workloads/master-be/tls.crt }
+  eduvision_master_key: { file: ../../security/pki/dev/workloads/master-be/tls.key }
+  public_ingress_cert: { file: ../../security/pki/dev/public-ingress/tls.crt }
+  public_ingress_key: { file: ../../security/pki/dev/public-ingress/tls.key }

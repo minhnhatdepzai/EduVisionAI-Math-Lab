@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1800" viewBox="0 0 1600 1800">
+  <rect width="1600" height="1800" fill="#fff"/>
+  <text x="100" y="115" font-family="DejaVu Sans, sans-serif" font-size="48" font-weight="700" fill="#111">PHIẾU BÀI TẬP TOÁN</text>
+  <line x1="100" y1="150" x2="1500" y2="150" stroke="#222" stroke-width="3"/>
+  <text x="100" y="260" font-family="DejaVu Sans, sans-serif" font-size="36" font-weight="700">Câu 1.</text>
+  <text x="270" y="260" font-family="DejaVu Sans, sans-serif" font-size="36">Lan có 15 nhãn vở, cho bạn 6 nhãn. Lan còn lại bao nhiêu nhãn?</text>
+  <text x="100" y="520" font-family="DejaVu Sans, sans-serif" font-size="36" font-weight="700">Câu 2.</text>
+  <text x="270" y="520" font-family="DejaVu Sans, sans-serif" font-size="36">Một băng giấy chia 8 phần bằng nhau, tô màu 3 phần.</text>
+  <text x="270" y="580" font-family="DejaVu Sans, sans-serif" font-size="36">Phần đã tô màu biểu diễn phân số nào?</text>
+  <text x="100" y="840" font-family="DejaVu Sans, sans-serif" font-size="36" font-weight="700">Câu 3.</text>
+  <text x="270" y="840" font-family="DejaVu Sans, sans-serif" font-size="36">Một ô tô đi 120 km trong 2 giờ. Tính vận tốc của ô tô.</text>
+  <text x="100" y="1100" font-family="DejaVu Sans, sans-serif" font-size="36" font-weight="700">Câu 4.</text>
+  <text x="270" y="1100" font-family="DejaVu Sans, sans-serif" font-size="36">Hình vuông có cạnh 9 cm. Tính diện tích hình vuông.</text>
+  <text x="100" y="1360" font-family="DejaVu Sans, sans-serif" font-size="36" font-weight="700">Câu 5.</text>
+  <text x="270" y="1360" font-family="DejaVu Sans, sans-serif" font-size="36">Tìm x, biết x + 17 = 42.</text>
+  <line x1="100" y1="1630" x2="1500" y2="1630" stroke="#999" stroke-width="2"/>
+  <text x="100" y="1710" font-family="DejaVu Sans, sans-serif" font-size="28" fill="#555">Hết</text>
+</svg>

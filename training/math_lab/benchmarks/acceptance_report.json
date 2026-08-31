@@ -1,0 +1,2746 @@
+{
+  "matrix_version": "math-lab-acceptance-v3",
+  "catalog_version": "math-family-catalog-v3",
+  "total": 270,
+  "passed": 270,
+  "failed": 0,
+  "by_grade": {
+    "1": {
+      "passed": 6
+    },
+    "2": {
+      "passed": 14
+    },
+    "3": {
+      "passed": 23
+    },
+    "4": {
+      "passed": 37
+    },
+    "5": {
+      "passed": 35
+    },
+    "6": {
+      "passed": 23
+    },
+    "7": {
+      "passed": 31
+    },
+    "8": {
+      "passed": 31
+    },
+    "9": {
+      "passed": 70
+    }
+  },
+  "by_family": {
+    "absolute_value_equation": {
+      "passed": 2
+    },
+    "addition": {
+      "passed": 3
+    },
+    "addition_basic": {
+      "passed": 2
+    },
+    "algebraic_expression_modeling": {
+      "passed": 3
+    },
+    "angle_bisector": {
+      "passed": 3
+    },
+    "angle_of_depression_distance": {
+      "passed": 4
+    },
+    "arithmetic_mean": {
+      "passed": 3
+    },
+    "binomial_expansion": {
+      "passed": 3
+    },
+    "biquadratic_equation": {
+      "passed": 2
+    },
+    "circle_area": {
+      "passed": 3
+    },
+    "circle_radius_diameter": {
+      "passed": 3
+    },
+    "circle_tangent_cyclic_proof": {
+      "passed": 3
+    },
+    "column_arithmetic_regrouping": {
+      "passed": 3
+    },
+    "compound_linear_equation": {
+      "passed": 5
+    },
+    "coordinate_plot": {
+      "passed": 3
+    },
+    "cubic_equation": {
+      "passed": 2
+    },
+    "cuboid_volume": {
+      "passed": 3
+    },
+    "cylinder_cone_sphere_volume": {
+      "passed": 3
+    },
+    "decimal_arithmetic": {
+      "passed": 3
+    },
+    "decimal_read_write": {
+      "passed": 3
+    },
+    "discount_tax_percentage": {
+      "passed": 3
+    },
+    "distance_speed_time": {
+      "passed": 3
+    },
+    "distance_time_direct_proportion": {
+      "passed": 2
+    },
+    "divisibility_common_multiple": {
+      "passed": 3
+    },
+    "division_basic": {
+      "passed": 1
+    },
+    "division_grouping": {
+      "passed": 3
+    },
+    "experimental_probability": {
+      "passed": 3
+    },
+    "fraction_addition": {
+      "passed": 5
+    },
+    "fraction_division": {
+      "passed": 3
+    },
+    "fraction_equivalence": {
+      "passed": 3
+    },
+    "fraction_multiplication": {
+      "passed": 3
+    },
+    "fraction_power": {
+      "passed": 3
+    },
+    "fraction_subtraction": {
+      "passed": 3
+    },
+    "fractional_linear_equation": {
+      "passed": 2
+    },
+    "linear_contradiction": {
+      "passed": 1
+    },
+    "linear_equation": {
+      "passed": 5
+    },
+    "linear_equation_three_variables_plane": {
+      "passed": 5
+    },
+    "linear_equation_two_variables_graph": {
+      "passed": 3
+    },
+    "linear_function": {
+      "passed": 3
+    },
+    "linear_identity": {
+      "passed": 1
+    },
+    "linear_inequality_one_variable": {
+      "passed": 4
+    },
+    "linear_system_two_variables_graph": {
+      "passed": 3
+    },
+    "map_scale": {
+      "passed": 3
+    },
+    "measurement_conversion_comparison": {
+      "passed": 3
+    },
+    "missing_number_equation": {
+      "passed": 4
+    },
+    "mixed_rational_arithmetic_percent": {
+      "passed": 3
+    },
+    "multi_segment_equal_distance_motion": {
+      "passed": 3
+    },
+    "multi_step_arithmetic_word": {
+      "passed": 3
+    },
+    "multiplication_basic": {
+      "passed": 1
+    },
+    "multiplication_grouping": {
+      "passed": 3
+    },
+    "number_ordering_rounding": {
+      "passed": 3
+    },
+    "oblique_triangle_altitude_solution": {
+      "passed": 4
+    },
+    "parallelogram_perpendicular_diagonal_area": {
+      "passed": 4
+    },
+    "parenthesized_addition_multiplication": {
+      "passed": 2
+    },
+    "percentage_part_whole": {
+      "passed": 3
+    },
+    "picture_bar_chart_reading": {
+      "passed": 3
+    },
+    "place_value_read_write": {
+      "passed": 3
+    },
+    "polynomial_add_subtract": {
+      "passed": 3
+    },
+    "polynomial_evaluate_reorder": {
+      "passed": 4
+    },
+    "product_equation_roots": {
+      "passed": 4
+    },
+    "proportional_system_two_variables": {
+      "passed": 3
+    },
+    "quadratic_equation_vieta": {
+      "passed": 4
+    },
+    "quadratic_function_graph": {
+      "passed": 3
+    },
+    "quadratic_surface_three_variables": {
+      "passed": 4
+    },
+    "radical_equation": {
+      "passed": 2
+    },
+    "ratio_from_known_value": {
+      "passed": 3
+    },
+    "ratio_total_parts": {
+      "passed": 3
+    },
+    "rational_equation": {
+      "passed": 2
+    },
+    "rational_equation_domain": {
+      "passed": 4
+    },
+    "ray_segment_midpoint": {
+      "passed": 3
+    },
+    "rectangle_area": {
+      "passed": 4
+    },
+    "rectangle_perimeter": {
+      "passed": 3
+    },
+    "rhombus_parallelogram_area_properties": {
+      "passed": 3
+    },
+    "right_triangle_hypotenuse": {
+      "passed": 1
+    },
+    "right_triangle_solution": {
+      "passed": 6
+    },
+    "sequential_fraction_remainder_quantity": {
+      "passed": 4
+    },
+    "sequential_fraction_remainder_ratio": {
+      "passed": 3
+    },
+    "shape_recognition_counting_pattern": {
+      "passed": 3
+    },
+    "signed_decimal_fraction_ordering": {
+      "passed": 3
+    },
+    "statistics_probability_from_chart": {
+      "passed": 3
+    },
+    "subtraction": {
+      "passed": 3
+    },
+    "subtraction_basic": {
+      "passed": 1
+    },
+    "time_calendar_duration": {
+      "passed": 3
+    },
+    "triangle_area": {
+      "passed": 3
+    },
+    "triangle_congruence_centroid_proof": {
+      "passed": 3
+    },
+    "triangle_similarity_metric_relation": {
+      "passed": 3
+    },
+    "two_item_discount_system": {
+      "passed": 3
+    },
+    "word_equation_rectangle": {
+      "passed": 3
+    },
+    "work_rate_with_variable_people": {
+      "passed": 4
+    }
+  },
+  "by_modality": {
+    "semantic_reference": {
+      "passed": 213
+    },
+    "text": {
+      "passed": 57
+    }
+  },
+  "failures_by_layer": {},
+  "cases": [
+    {
+      "id": "g1-addition-symbolic",
+      "grade": 1,
+      "family": "addition_basic",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g1-addition-word",
+      "grade": 1,
+      "family": "addition_basic",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g1-subtraction-truck-yard",
+      "grade": 1,
+      "family": "subtraction_basic",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g2-multiplication-word-unaccented",
+      "grade": 2,
+      "family": "multiplication_basic",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g2-division-equal-share",
+      "grade": 2,
+      "family": "division_basic",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g3-parenthesized-multiplication",
+      "grade": 3,
+      "family": "parenthesized_addition_multiplication",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g3-parenthesized-multiplication-unaccented",
+      "grade": 3,
+      "family": "parenthesized_addition_multiplication",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g4-fraction-addition",
+      "grade": 4,
+      "family": "fraction_addition",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g4-fraction-addition-typed-phan",
+      "grade": 4,
+      "family": "fraction_addition",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g4-rectangle-area",
+      "grade": 4,
+      "family": "rectangle_area",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g5-distance-time-direct-proportion",
+      "grade": 5,
+      "family": "distance_time_direct_proportion",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g5-distance-time-unseen-numbers",
+      "grade": 5,
+      "family": "distance_time_direct_proportion",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g5-work-rate-variable-people",
+      "grade": 5,
+      "family": "work_rate_with_variable_people",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g6-sequential-fraction-remainder-quantity",
+      "grade": 6,
+      "family": "sequential_fraction_remainder_quantity",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g7-linear-expression-tiles",
+      "grade": 7,
+      "family": "polynomial_evaluate_reorder",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g8-linear-equation-balance",
+      "grade": 8,
+      "family": "linear_equation",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g8-linear-equation-variable-both-sides",
+      "grade": 8,
+      "family": "linear_equation",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g8-compound-linear-equation",
+      "grade": 8,
+      "family": "compound_linear_equation",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g8-compound-linear-equation-vietnamese",
+      "grade": 8,
+      "family": "compound_linear_equation",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "adv-missing-number-blank",
+      "grade": 2,
+      "family": "missing_number_equation",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g8-two-variable-line",
+      "grade": 8,
+      "family": "linear_equation_two_variables_graph",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g8-two-variable-line-y-first",
+      "grade": 8,
+      "family": "linear_equation_two_variables_graph",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g8-two-variable-line-vietnamese-prefix",
+      "grade": 8,
+      "family": "linear_equation_two_variables_graph",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g9-plane-through-origin",
+      "grade": 9,
+      "family": "linear_equation_three_variables_plane",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g9-plane-through-origin-spaced",
+      "grade": 9,
+      "family": "linear_equation_three_variables_plane",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g9-plane-through-origin-implicit-coefficient",
+      "grade": 9,
+      "family": "linear_equation_three_variables_plane",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g9-plane-offset",
+      "grade": 9,
+      "family": "linear_equation_three_variables_plane",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g9-plane-negative-coefficients",
+      "grade": 9,
+      "family": "linear_equation_three_variables_plane",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g9-system-intersecting",
+      "grade": 9,
+      "family": "linear_system_two_variables_graph",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g9-system-coincident",
+      "grade": 9,
+      "family": "linear_system_two_variables_graph",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g9-system-parallel",
+      "grade": 9,
+      "family": "linear_system_two_variables_graph",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g9-right-triangle-solution",
+      "grade": 9,
+      "family": "right_triangle_solution",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g9-right-triangle-solution-reordered",
+      "grade": 9,
+      "family": "right_triangle_solution",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g9-right-triangle-side-and-angle",
+      "grade": 9,
+      "family": "right_triangle_solution",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g9-right-triangle-hypotenuse",
+      "grade": 9,
+      "family": "right_triangle_hypotenuse",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g9-quadratic-equation-plain",
+      "grade": 9,
+      "family": "quadratic_equation_vieta",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g9-cubic-equation-three-real-roots",
+      "grade": 9,
+      "family": "cubic_equation",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g8-fractional-linear-equation",
+      "grade": 8,
+      "family": "fractional_linear_equation",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g8-absolute-value-two-roots",
+      "grade": 8,
+      "family": "absolute_value_equation",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g9-biquadratic-four-roots",
+      "grade": 9,
+      "family": "biquadratic_equation",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g9-radical-extraneous-root",
+      "grade": 9,
+      "family": "radical_equation",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g9-rational-equation-roots-and-domain",
+      "grade": 9,
+      "family": "rational_equation",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g9-cubic-equation-typed-mu-bang",
+      "grade": 9,
+      "family": "cubic_equation",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g8-fractional-linear-typed-phan",
+      "grade": 8,
+      "family": "fractional_linear_equation",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g8-absolute-value-typed-words",
+      "grade": 8,
+      "family": "absolute_value_equation",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g9-biquadratic-typed-mu",
+      "grade": 9,
+      "family": "biquadratic_equation",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g9-radical-typed-can-bac-hai",
+      "grade": 9,
+      "family": "radical_equation",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g9-rational-typed-phan",
+      "grade": 9,
+      "family": "rational_equation",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g9-linear-inequality-number-line",
+      "grade": 9,
+      "family": "linear_inequality_one_variable",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g9-product-equation-roots",
+      "grade": 9,
+      "family": "product_equation_roots",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g9-rational-domain-exclusions",
+      "grade": 9,
+      "family": "rational_equation_domain",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g9-angle-of-depression-lighthouse",
+      "grade": 9,
+      "family": "angle_of_depression_distance",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g9-oblique-triangle-altitude",
+      "grade": 9,
+      "family": "oblique_triangle_altitude_solution",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g9-parallelogram-perpendicular-diagonal",
+      "grade": 9,
+      "family": "parallelogram_perpendicular_diagonal_area",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "g9-quadratic-surface-xyz",
+      "grade": 9,
+      "family": "quadratic_surface_three_variables",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "adv-linear-identity",
+      "grade": 8,
+      "family": "linear_identity",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "adv-linear-contradiction",
+      "grade": 8,
+      "family": "linear_contradiction",
+      "modality": "text",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-addition-train",
+      "grade": 2,
+      "family": "addition",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-addition-validation",
+      "grade": 2,
+      "family": "addition",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-addition-test",
+      "grade": 2,
+      "family": "addition",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-subtraction-train",
+      "grade": 2,
+      "family": "subtraction",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-subtraction-validation",
+      "grade": 2,
+      "family": "subtraction",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-subtraction-test",
+      "grade": 2,
+      "family": "subtraction",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-multiplication_grouping-train",
+      "grade": 3,
+      "family": "multiplication_grouping",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-multiplication_grouping-validation",
+      "grade": 3,
+      "family": "multiplication_grouping",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-multiplication_grouping-test",
+      "grade": 3,
+      "family": "multiplication_grouping",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-division_grouping-train",
+      "grade": 3,
+      "family": "division_grouping",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-division_grouping-validation",
+      "grade": 3,
+      "family": "division_grouping",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-division_grouping-test",
+      "grade": 3,
+      "family": "division_grouping",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-fraction_addition-train",
+      "grade": 4,
+      "family": "fraction_addition",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-fraction_addition-validation",
+      "grade": 4,
+      "family": "fraction_addition",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-fraction_addition-test",
+      "grade": 4,
+      "family": "fraction_addition",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-fraction_subtraction-train",
+      "grade": 4,
+      "family": "fraction_subtraction",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-fraction_subtraction-validation",
+      "grade": 4,
+      "family": "fraction_subtraction",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-fraction_subtraction-test",
+      "grade": 4,
+      "family": "fraction_subtraction",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-fraction_multiplication-train",
+      "grade": 5,
+      "family": "fraction_multiplication",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-fraction_multiplication-validation",
+      "grade": 5,
+      "family": "fraction_multiplication",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-fraction_multiplication-test",
+      "grade": 5,
+      "family": "fraction_multiplication",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-fraction_equivalence-train",
+      "grade": 4,
+      "family": "fraction_equivalence",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-fraction_equivalence-validation",
+      "grade": 4,
+      "family": "fraction_equivalence",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-fraction_equivalence-test",
+      "grade": 4,
+      "family": "fraction_equivalence",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-fraction_power-train",
+      "grade": 7,
+      "family": "fraction_power",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-fraction_power-validation",
+      "grade": 7,
+      "family": "fraction_power",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-fraction_power-test",
+      "grade": 7,
+      "family": "fraction_power",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-ratio_from_known_value-train",
+      "grade": 4,
+      "family": "ratio_from_known_value",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-ratio_from_known_value-validation",
+      "grade": 4,
+      "family": "ratio_from_known_value",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-ratio_from_known_value-test",
+      "grade": 4,
+      "family": "ratio_from_known_value",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-ratio_total_parts-train",
+      "grade": 4,
+      "family": "ratio_total_parts",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-ratio_total_parts-validation",
+      "grade": 4,
+      "family": "ratio_total_parts",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-ratio_total_parts-test",
+      "grade": 4,
+      "family": "ratio_total_parts",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-proportional_system_two_variables-train",
+      "grade": 7,
+      "family": "proportional_system_two_variables",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-proportional_system_two_variables-validation",
+      "grade": 7,
+      "family": "proportional_system_two_variables",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-proportional_system_two_variables-test",
+      "grade": 7,
+      "family": "proportional_system_two_variables",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-arithmetic_mean-train",
+      "grade": 4,
+      "family": "arithmetic_mean",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-arithmetic_mean-validation",
+      "grade": 4,
+      "family": "arithmetic_mean",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-arithmetic_mean-test",
+      "grade": 4,
+      "family": "arithmetic_mean",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-multi_step_arithmetic_word-train",
+      "grade": 3,
+      "family": "multi_step_arithmetic_word",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-multi_step_arithmetic_word-validation",
+      "grade": 3,
+      "family": "multi_step_arithmetic_word",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-multi_step_arithmetic_word-test",
+      "grade": 3,
+      "family": "multi_step_arithmetic_word",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-map_scale-train",
+      "grade": 4,
+      "family": "map_scale",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-map_scale-validation",
+      "grade": 4,
+      "family": "map_scale",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-map_scale-test",
+      "grade": 4,
+      "family": "map_scale",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-sequential_fraction_remainder_ratio-train",
+      "grade": 7,
+      "family": "sequential_fraction_remainder_ratio",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-sequential_fraction_remainder_ratio-validation",
+      "grade": 7,
+      "family": "sequential_fraction_remainder_ratio",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-sequential_fraction_remainder_ratio-test",
+      "grade": 7,
+      "family": "sequential_fraction_remainder_ratio",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-sequential_fraction_remainder_quantity-train",
+      "grade": 6,
+      "family": "sequential_fraction_remainder_quantity",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-sequential_fraction_remainder_quantity-validation",
+      "grade": 6,
+      "family": "sequential_fraction_remainder_quantity",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-sequential_fraction_remainder_quantity-test",
+      "grade": 6,
+      "family": "sequential_fraction_remainder_quantity",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-work_rate_with_variable_people-train",
+      "grade": 5,
+      "family": "work_rate_with_variable_people",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-work_rate_with_variable_people-validation",
+      "grade": 5,
+      "family": "work_rate_with_variable_people",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-work_rate_with_variable_people-test",
+      "grade": 5,
+      "family": "work_rate_with_variable_people",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-linear_equation-train",
+      "grade": 7,
+      "family": "linear_equation",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-linear_equation-validation",
+      "grade": 7,
+      "family": "linear_equation",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-linear_equation-test",
+      "grade": 7,
+      "family": "linear_equation",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-compound_linear_equation-train",
+      "grade": 8,
+      "family": "compound_linear_equation",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-compound_linear_equation-validation",
+      "grade": 8,
+      "family": "compound_linear_equation",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-compound_linear_equation-test",
+      "grade": 8,
+      "family": "compound_linear_equation",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-linear_function-train",
+      "grade": 8,
+      "family": "linear_function",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-linear_function-validation",
+      "grade": 8,
+      "family": "linear_function",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-linear_function-test",
+      "grade": 8,
+      "family": "linear_function",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-linear_inequality_one_variable-train",
+      "grade": 9,
+      "family": "linear_inequality_one_variable",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-linear_inequality_one_variable-validation",
+      "grade": 9,
+      "family": "linear_inequality_one_variable",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-linear_inequality_one_variable-test",
+      "grade": 9,
+      "family": "linear_inequality_one_variable",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-product_equation_roots-train",
+      "grade": 9,
+      "family": "product_equation_roots",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-product_equation_roots-validation",
+      "grade": 9,
+      "family": "product_equation_roots",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-product_equation_roots-test",
+      "grade": 9,
+      "family": "product_equation_roots",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-rational_equation_domain-train",
+      "grade": 9,
+      "family": "rational_equation_domain",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-rational_equation_domain-validation",
+      "grade": 9,
+      "family": "rational_equation_domain",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-rational_equation_domain-test",
+      "grade": 9,
+      "family": "rational_equation_domain",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-quadratic_surface_three_variables-train",
+      "grade": 9,
+      "family": "quadratic_surface_three_variables",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-quadratic_surface_three_variables-validation",
+      "grade": 9,
+      "family": "quadratic_surface_three_variables",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-quadratic_surface_three_variables-test",
+      "grade": 9,
+      "family": "quadratic_surface_three_variables",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-mixed_rational_arithmetic_percent-train",
+      "grade": 6,
+      "family": "mixed_rational_arithmetic_percent",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-mixed_rational_arithmetic_percent-validation",
+      "grade": 6,
+      "family": "mixed_rational_arithmetic_percent",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-mixed_rational_arithmetic_percent-test",
+      "grade": 6,
+      "family": "mixed_rational_arithmetic_percent",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-discount_tax_percentage-train",
+      "grade": 6,
+      "family": "discount_tax_percentage",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-discount_tax_percentage-validation",
+      "grade": 6,
+      "family": "discount_tax_percentage",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-discount_tax_percentage-test",
+      "grade": 6,
+      "family": "discount_tax_percentage",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-two_item_discount_system-train",
+      "grade": 9,
+      "family": "two_item_discount_system",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-two_item_discount_system-validation",
+      "grade": 9,
+      "family": "two_item_discount_system",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-two_item_discount_system-test",
+      "grade": 9,
+      "family": "two_item_discount_system",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-multi_segment_equal_distance_motion-train",
+      "grade": 7,
+      "family": "multi_segment_equal_distance_motion",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-multi_segment_equal_distance_motion-validation",
+      "grade": 7,
+      "family": "multi_segment_equal_distance_motion",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-multi_segment_equal_distance_motion-test",
+      "grade": 7,
+      "family": "multi_segment_equal_distance_motion",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-time_calendar_duration-train",
+      "grade": 5,
+      "family": "time_calendar_duration",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-time_calendar_duration-validation",
+      "grade": 5,
+      "family": "time_calendar_duration",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-time_calendar_duration-test",
+      "grade": 3,
+      "family": "time_calendar_duration",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-algebraic_expression_modeling-train",
+      "grade": 7,
+      "family": "algebraic_expression_modeling",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-algebraic_expression_modeling-validation",
+      "grade": 7,
+      "family": "algebraic_expression_modeling",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-algebraic_expression_modeling-test",
+      "grade": 7,
+      "family": "algebraic_expression_modeling",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-triangle_congruence_centroid_proof-train",
+      "grade": 7,
+      "family": "triangle_congruence_centroid_proof",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-triangle_congruence_centroid_proof-validation",
+      "grade": 7,
+      "family": "triangle_congruence_centroid_proof",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-triangle_congruence_centroid_proof-test",
+      "grade": 7,
+      "family": "triangle_congruence_centroid_proof",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-triangle_similarity_metric_relation-train",
+      "grade": 8,
+      "family": "triangle_similarity_metric_relation",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-triangle_similarity_metric_relation-validation",
+      "grade": 8,
+      "family": "triangle_similarity_metric_relation",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-triangle_similarity_metric_relation-test",
+      "grade": 8,
+      "family": "triangle_similarity_metric_relation",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-word_equation_rectangle-train",
+      "grade": 8,
+      "family": "word_equation_rectangle",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-word_equation_rectangle-validation",
+      "grade": 8,
+      "family": "word_equation_rectangle",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-word_equation_rectangle-test",
+      "grade": 8,
+      "family": "word_equation_rectangle",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-right_triangle_solution-train",
+      "grade": 9,
+      "family": "right_triangle_solution",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-right_triangle_solution-validation",
+      "grade": 9,
+      "family": "right_triangle_solution",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-right_triangle_solution-test",
+      "grade": 9,
+      "family": "right_triangle_solution",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-angle_of_depression_distance-train",
+      "grade": 9,
+      "family": "angle_of_depression_distance",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-angle_of_depression_distance-validation",
+      "grade": 9,
+      "family": "angle_of_depression_distance",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-angle_of_depression_distance-test",
+      "grade": 9,
+      "family": "angle_of_depression_distance",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-oblique_triangle_altitude_solution-train",
+      "grade": 9,
+      "family": "oblique_triangle_altitude_solution",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-oblique_triangle_altitude_solution-validation",
+      "grade": 9,
+      "family": "oblique_triangle_altitude_solution",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-oblique_triangle_altitude_solution-test",
+      "grade": 9,
+      "family": "oblique_triangle_altitude_solution",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-parallelogram_perpendicular_diagonal_area-train",
+      "grade": 9,
+      "family": "parallelogram_perpendicular_diagonal_area",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-parallelogram_perpendicular_diagonal_area-validation",
+      "grade": 9,
+      "family": "parallelogram_perpendicular_diagonal_area",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-parallelogram_perpendicular_diagonal_area-test",
+      "grade": 9,
+      "family": "parallelogram_perpendicular_diagonal_area",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-coordinate_plot-train",
+      "grade": 6,
+      "family": "coordinate_plot",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-coordinate_plot-validation",
+      "grade": 6,
+      "family": "coordinate_plot",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-coordinate_plot-test",
+      "grade": 6,
+      "family": "coordinate_plot",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-rectangle_area-train",
+      "grade": 4,
+      "family": "rectangle_area",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-rectangle_area-validation",
+      "grade": 4,
+      "family": "rectangle_area",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-rectangle_area-test",
+      "grade": 4,
+      "family": "rectangle_area",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-rectangle_perimeter-train",
+      "grade": 3,
+      "family": "rectangle_perimeter",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-rectangle_perimeter-validation",
+      "grade": 3,
+      "family": "rectangle_perimeter",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-rectangle_perimeter-test",
+      "grade": 3,
+      "family": "rectangle_perimeter",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-cuboid_volume-train",
+      "grade": 5,
+      "family": "cuboid_volume",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-cuboid_volume-validation",
+      "grade": 5,
+      "family": "cuboid_volume",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-cuboid_volume-test",
+      "grade": 5,
+      "family": "cuboid_volume",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-binomial_expansion-train",
+      "grade": 8,
+      "family": "binomial_expansion",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-binomial_expansion-validation",
+      "grade": 8,
+      "family": "binomial_expansion",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-binomial_expansion-test",
+      "grade": 8,
+      "family": "binomial_expansion",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-distance_speed_time-train",
+      "grade": 5,
+      "family": "distance_speed_time",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-distance_speed_time-validation",
+      "grade": 5,
+      "family": "distance_speed_time",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-distance_speed_time-test",
+      "grade": 5,
+      "family": "distance_speed_time",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-place_value_read_write-train",
+      "grade": 3,
+      "family": "place_value_read_write",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-place_value_read_write-validation",
+      "grade": 5,
+      "family": "place_value_read_write",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-place_value_read_write-test",
+      "grade": 3,
+      "family": "place_value_read_write",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-decimal_read_write-train",
+      "grade": 5,
+      "family": "decimal_read_write",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-decimal_read_write-validation",
+      "grade": 5,
+      "family": "decimal_read_write",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-decimal_read_write-test",
+      "grade": 5,
+      "family": "decimal_read_write",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-column_arithmetic_regrouping-train",
+      "grade": 5,
+      "family": "column_arithmetic_regrouping",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-column_arithmetic_regrouping-validation",
+      "grade": 3,
+      "family": "column_arithmetic_regrouping",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-column_arithmetic_regrouping-test",
+      "grade": 2,
+      "family": "column_arithmetic_regrouping",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-decimal_arithmetic-train",
+      "grade": 5,
+      "family": "decimal_arithmetic",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-decimal_arithmetic-validation",
+      "grade": 5,
+      "family": "decimal_arithmetic",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-decimal_arithmetic-test",
+      "grade": 5,
+      "family": "decimal_arithmetic",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-measurement_conversion_comparison-train",
+      "grade": 5,
+      "family": "measurement_conversion_comparison",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-measurement_conversion_comparison-validation",
+      "grade": 4,
+      "family": "measurement_conversion_comparison",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-measurement_conversion_comparison-test",
+      "grade": 2,
+      "family": "measurement_conversion_comparison",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-picture_bar_chart_reading-train",
+      "grade": 5,
+      "family": "picture_bar_chart_reading",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-picture_bar_chart_reading-validation",
+      "grade": 3,
+      "family": "picture_bar_chart_reading",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-picture_bar_chart_reading-test",
+      "grade": 3,
+      "family": "picture_bar_chart_reading",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-fraction_division-train",
+      "grade": 4,
+      "family": "fraction_division",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-fraction_division-validation",
+      "grade": 4,
+      "family": "fraction_division",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-fraction_division-test",
+      "grade": 4,
+      "family": "fraction_division",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-quadratic_function_graph-train",
+      "grade": 9,
+      "family": "quadratic_function_graph",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-quadratic_function_graph-validation",
+      "grade": 9,
+      "family": "quadratic_function_graph",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-quadratic_function_graph-test",
+      "grade": 9,
+      "family": "quadratic_function_graph",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-quadratic_equation_vieta-train",
+      "grade": 9,
+      "family": "quadratic_equation_vieta",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-quadratic_equation_vieta-validation",
+      "grade": 9,
+      "family": "quadratic_equation_vieta",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-quadratic_equation_vieta-test",
+      "grade": 9,
+      "family": "quadratic_equation_vieta",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-statistics_probability_from_chart-train",
+      "grade": 9,
+      "family": "statistics_probability_from_chart",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-statistics_probability_from_chart-validation",
+      "grade": 9,
+      "family": "statistics_probability_from_chart",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-statistics_probability_from_chart-test",
+      "grade": 9,
+      "family": "statistics_probability_from_chart",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-triangle_area-train",
+      "grade": 5,
+      "family": "triangle_area",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-triangle_area-validation",
+      "grade": 5,
+      "family": "triangle_area",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-triangle_area-test",
+      "grade": 5,
+      "family": "triangle_area",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-number_ordering_rounding-train",
+      "grade": 6,
+      "family": "number_ordering_rounding",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-number_ordering_rounding-validation",
+      "grade": 6,
+      "family": "number_ordering_rounding",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-number_ordering_rounding-test",
+      "grade": 3,
+      "family": "number_ordering_rounding",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-circle_radius_diameter-train",
+      "grade": 5,
+      "family": "circle_radius_diameter",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-circle_radius_diameter-validation",
+      "grade": 3,
+      "family": "circle_radius_diameter",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-circle_radius_diameter-test",
+      "grade": 3,
+      "family": "circle_radius_diameter",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-circle_area-train",
+      "grade": 5,
+      "family": "circle_area",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-circle_area-validation",
+      "grade": 5,
+      "family": "circle_area",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-circle_area-test",
+      "grade": 5,
+      "family": "circle_area",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-circle_tangent_cyclic_proof-train",
+      "grade": 9,
+      "family": "circle_tangent_cyclic_proof",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-circle_tangent_cyclic_proof-validation",
+      "grade": 9,
+      "family": "circle_tangent_cyclic_proof",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-circle_tangent_cyclic_proof-test",
+      "grade": 9,
+      "family": "circle_tangent_cyclic_proof",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-divisibility_common_multiple-train",
+      "grade": 4,
+      "family": "divisibility_common_multiple",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-divisibility_common_multiple-validation",
+      "grade": 4,
+      "family": "divisibility_common_multiple",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-divisibility_common_multiple-test",
+      "grade": 4,
+      "family": "divisibility_common_multiple",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-rhombus_parallelogram_area_properties-train",
+      "grade": 4,
+      "family": "rhombus_parallelogram_area_properties",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-rhombus_parallelogram_area_properties-validation",
+      "grade": 4,
+      "family": "rhombus_parallelogram_area_properties",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-rhombus_parallelogram_area_properties-test",
+      "grade": 4,
+      "family": "rhombus_parallelogram_area_properties",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-ray_segment_midpoint-train",
+      "grade": 6,
+      "family": "ray_segment_midpoint",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-ray_segment_midpoint-validation",
+      "grade": 6,
+      "family": "ray_segment_midpoint",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-ray_segment_midpoint-test",
+      "grade": 6,
+      "family": "ray_segment_midpoint",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-angle_bisector-train",
+      "grade": 7,
+      "family": "angle_bisector",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-angle_bisector-validation",
+      "grade": 7,
+      "family": "angle_bisector",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-angle_bisector-test",
+      "grade": 7,
+      "family": "angle_bisector",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-experimental_probability-train",
+      "grade": 8,
+      "family": "experimental_probability",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-experimental_probability-validation",
+      "grade": 8,
+      "family": "experimental_probability",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-experimental_probability-test",
+      "grade": 8,
+      "family": "experimental_probability",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-cylinder_cone_sphere_volume-train",
+      "grade": 9,
+      "family": "cylinder_cone_sphere_volume",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-cylinder_cone_sphere_volume-validation",
+      "grade": 9,
+      "family": "cylinder_cone_sphere_volume",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-cylinder_cone_sphere_volume-test",
+      "grade": 9,
+      "family": "cylinder_cone_sphere_volume",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-percentage_part_whole-train",
+      "grade": 5,
+      "family": "percentage_part_whole",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-percentage_part_whole-validation",
+      "grade": 6,
+      "family": "percentage_part_whole",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-percentage_part_whole-test",
+      "grade": 6,
+      "family": "percentage_part_whole",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-polynomial_evaluate_reorder-train",
+      "grade": 7,
+      "family": "polynomial_evaluate_reorder",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-polynomial_evaluate_reorder-validation",
+      "grade": 7,
+      "family": "polynomial_evaluate_reorder",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-polynomial_evaluate_reorder-test",
+      "grade": 7,
+      "family": "polynomial_evaluate_reorder",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-polynomial_add_subtract-train",
+      "grade": 7,
+      "family": "polynomial_add_subtract",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-polynomial_add_subtract-validation",
+      "grade": 7,
+      "family": "polynomial_add_subtract",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-polynomial_add_subtract-test",
+      "grade": 7,
+      "family": "polynomial_add_subtract",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-signed_decimal_fraction_ordering-train",
+      "grade": 6,
+      "family": "signed_decimal_fraction_ordering",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-signed_decimal_fraction_ordering-validation",
+      "grade": 6,
+      "family": "signed_decimal_fraction_ordering",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-signed_decimal_fraction_ordering-test",
+      "grade": 6,
+      "family": "signed_decimal_fraction_ordering",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-missing_number_equation-train",
+      "grade": 2,
+      "family": "missing_number_equation",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-missing_number_equation-validation",
+      "grade": 2,
+      "family": "missing_number_equation",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-missing_number_equation-test",
+      "grade": 2,
+      "family": "missing_number_equation",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-shape_recognition_counting_pattern-train",
+      "grade": 1,
+      "family": "shape_recognition_counting_pattern",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-shape_recognition_counting_pattern-validation",
+      "grade": 1,
+      "family": "shape_recognition_counting_pattern",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    },
+    {
+      "id": "gen-shape_recognition_counting_pattern-test",
+      "grade": 1,
+      "family": "shape_recognition_counting_pattern",
+      "modality": "semantic_reference",
+      "passed": true,
+      "failure_layer": null,
+      "failures": []
+    }
+  ]
+}

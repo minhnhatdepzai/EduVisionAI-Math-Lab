@@ -1,0 +1,29 @@
+{
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "method": "QLoRA NF4",
+  "load_in_4bit": true,
+  "bnb_4bit_quant_type": "nf4",
+  "bnb_4bit_use_double_quant": true,
+  "bnb_4bit_compute_dtype": "bfloat16",
+  "vision_tower_frozen": true,
+  "lora_target_modules": ["q_proj", "k_proj", "v_proj", "o_proj"],
+  "lora_r": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.0,
+  "learning_rate": 0.00005,
+  "learning_rate_candidates": [0.00002, 0.00005, 0.0001],
+  "num_train_epochs": 3,
+  "per_device_train_batch_size": 1,
+  "gradient_accumulation_steps": 16,
+  "bf16": true,
+  "max_length": null,
+  "warmup_ratio": 0.03,
+  "lr_scheduler_type": "cosine",
+  "weight_decay": 0.01,
+  "notes": [
+    "Use prompt-completion data with completion-only loss; current TRL does not support assistant-only loss for vision datasets.",
+    "The script explicitly freezes visual/vision parameters after PEFT wrapping.",
+    "Do not launch the 8B target until at least 12 GB VRAM is free and the dry-run/data audit passes.",
+    "A one-step 4B compatibility smoke may use an explicit lower gate; it is not the production 8B adapter."
+  ]
+}

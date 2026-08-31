@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "mathlab-semantic-eaca245ad7e21d2f",
+  "content_digest": "eaca245ad7e21d2fbd6110ab52a363cf40fa0bd6b37276993202df012aa42e22",
+  "input_hashes": {
+    "generated_manifest": "b779e5ad9679d25799402d756a037d8ac09b3b54717fcf65a9008630f2eee88a",
+    "source_manifest": "45a006ffaadeea1b13d4ff941e2e3f2f8e15a3a5efee06a0bab5f7c682743807",
+    "family_catalog": "81a16fea61575501c34dea67fce141ae4e0ca65fb2ba7caebadf8c48542ba420",
+    "semantic_prompt": "ef0d5fef32eee00e407c45405e03dad430e9e6e54fd933d597784691a99c0f6f",
+    "generator": "ff3eb3a3998986ec8cb0e0e66f79ae7ee1af3cbad6a11f3e880f0692e54b32ad"
+  },
+  "seed": 260826,
+  "families": [
+    "addition",
+    "subtraction",
+    "multiplication_grouping",
+    "division_grouping",
+    "fraction_addition",
+    "fraction_subtraction",
+    "fraction_multiplication",
+    "fraction_equivalence",
+    "fraction_power",
+    "ratio_from_known_value",
+    "ratio_total_parts",
+    "proportional_system_two_variables",
+    "arithmetic_mean",
+    "multi_step_arithmetic_word",
+    "map_scale",
+    "sequential_fraction_remainder_ratio",
+    "sequential_fraction_remainder_quantity",
+    "work_rate_with_variable_people",
+    "linear_equation",
+    "compound_linear_equation",
+    "linear_function",
+    "linear_inequality_one_variable",
+    "product_equation_roots",
+    "rational_equation_domain",
+    "quadratic_surface_three_variables",
+    "mixed_rational_arithmetic_percent",
+    "discount_tax_percentage",
+    "two_item_discount_system",
+    "multi_segment_equal_distance_motion",
+    "time_calendar_duration",
+    "algebraic_expression_modeling",
+    "triangle_congruence_centroid_proof",
+    "triangle_similarity_metric_relation",
+    "word_equation_rectangle",
+    "right_triangle_solution",
+    "angle_of_depression_distance",
+    "oblique_triangle_altitude_solution",
+    "parallelogram_perpendicular_diagonal_area",
+    "coordinate_plot",
+    "rectangle_area",
+    "rectangle_perimeter",
+    "cuboid_volume",
+    "binomial_expansion",
+    "distance_speed_time",
+    "place_value_read_write",
+    "decimal_read_write",
+    "column_arithmetic_regrouping",
+    "decimal_arithmetic",
+    "measurement_conversion_comparison",
+    "picture_bar_chart_reading",
+    "fraction_division",
+    "quadratic_function_graph",
+    "quadratic_equation_vieta",
+    "statistics_probability_from_chart",
+    "triangle_area",
+    "number_ordering_rounding",
+    "circle_radius_diameter",
+    "circle_area",
+    "circle_tangent_cyclic_proof",
+    "divisibility_common_multiple",
+    "rhombus_parallelogram_area_properties",
+    "ray_segment_midpoint",
+    "angle_bisector",
+    "experimental_probability",
+    "cylinder_cone_sphere_volume",
+    "percentage_part_whole",
+    "polynomial_evaluate_reorder",
+    "polynomial_add_subtract",
+    "signed_decimal_fraction_ordering",
+    "missing_number_equation",
+    "shape_recognition_counting_pattern"
+  ],
+  "splits": {
+    "train": {
+      "semantic_cases": 5680,
+      "records": 11360,
+      "path": "math_scene_train.jsonl"
+    },
+    "validation": {
+      "semantic_cases": 852,
+      "records": 1704,
+      "path": "math_scene_validation.jsonl"
+    },
+    "test": {
+      "semantic_cases": 852,
+      "records": 1704,
+      "path": "math_scene_test.jsonl"
+    }
+  },
+  "modalities": [
+    "text",
+    "image"
+  ],
+  "web_source_usage": {
+    "TAXONOMY_ONLY": 6,
+    "METADATA_ONLY": 4
+  },
+  "web_records_in_training": 0,
+  "contamination_gate": {
+    "status": "passed",
+    "duplicate_stems_across_splits": 0,
+    "unique_stems_by_split": {
+      "train": 5654,
+      "validation": 852,
+      "test": 852
+    },
+    "command": "python training/math_lab/scripts/audit_sft.py",
+    "required": "zero duplicate stems across train, validation and test"
+  }
+}

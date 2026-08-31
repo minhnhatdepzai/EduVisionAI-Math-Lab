@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "candidates": [
+    {
+      "id": "qwen3-vl-8b-instruct-base",
+      "model": "qwen3-vl:8b-instruct",
+      "role": "production-current",
+      "eligible": false,
+      "reason": "Current base has runtime smoke evidence but no complete grade-by-family model-league report yet."
+    },
+    {
+      "id": "qwen3-vl-4b-fraction-power-smoke",
+      "model": "Qwen/Qwen3-VL-4B-Instruct",
+      "role": "pipeline-smoke",
+      "eligible": false,
+      "metrics": {
+        "train_loss": 0.247867,
+        "eval_loss": 0.241940,
+        "eval_mean_token_accuracy": 0.959119
+      },
+      "reason": "One-sample smoke checkpoint is not a production challenger."
+    }
+  ]
+}

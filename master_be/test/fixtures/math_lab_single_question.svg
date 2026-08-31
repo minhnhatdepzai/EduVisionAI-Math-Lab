@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="800" viewBox="0 0 1400 800">
+  <rect width="1400" height="800" fill="#fff"/>
+  <rect x="70" y="70" width="1260" height="660" rx="18" fill="none" stroke="#111" stroke-width="4"/>
+  <text x="120" y="170" font-family="DejaVu Sans, sans-serif" font-size="42" font-weight="700" fill="#111">BÀI TOÁN LỚP 4</text>
+  <text x="120" y="285" font-family="DejaVu Sans, sans-serif" font-size="36" fill="#111">Một khu vườn hình chữ nhật có chiều dài 12 m</text>
+  <text x="120" y="350" font-family="DejaVu Sans, sans-serif" font-size="36" fill="#111">và chiều rộng 7 m. Tính chu vi khu vườn đó.</text>
+  <rect x="390" y="455" width="520" height="190" fill="#e8f4ff" stroke="#1565c0" stroke-width="5"/>
+  <text x="590" y="690" font-family="DejaVu Sans, sans-serif" font-size="29" fill="#1565c0">12 m</text>
+  <text x="925" y="565" font-family="DejaVu Sans, sans-serif" font-size="29" fill="#1565c0">7 m</text>
+</svg>

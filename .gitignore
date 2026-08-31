@@ -1,0 +1,181 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.Python
+test.py
+
+# Models
+models/
+!models/.gitkeep
+# `models/` ở trên dành cho AI artifacts; không bỏ qua SQLAlchemy source models.
+!data_storage/app/databases/postgres/models/
+!data_storage/app/databases/postgres/models/*.py
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Node.js / Frontend
+node_modules/
+npm-debug.log
+yarn-error.log
+.npmrc
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/*
+*.log
+!logs/.gitkeep
+
+# Keep .gitkeep files in all directories
+!**/.gitkeep
+
+# Extra cache/build
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.cache/
+.vite/
+.next/
+.nuxt/
+coverage/
+
+# Large AI/model files
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.ckpt
+*.bin
+*.pkl
+*.joblib
+*.h5
+*.gguf
+weights/
+checkpoints/
+runs/
+outputs/
+uploads/
+tmp/
+temp/
+
+# Database/local runtime
+*.sqlite
+*.sqlite3
+*.db
+*.db-shm
+*.db-wal
+
+# Docker/local generated
+*.tar
+*.zip
+*.7z
+*.rar
+
+# Large generated/runtime files
+
+# AI/model/output/cache
+
+# DB/local
+
+# Archives
+*.tar.gz
+
+# ===== Local secrets =====
+.env.*
+!.env.example
+kaggle.json
+.kaggle/
+training/math_lab/data/raw/
+training/math_lab/data/generated/
+training/math_lab/checkpoints/
+training/math_lab/cache/
+training/math_lab/.venv/
+
+# Development PKI: generated certificates and private keys never enter Git.
+security/pki/dev/*
+!security/pki/dev/.gitkeep
+
+# ===== Python cache =====
+*.pyo
+
+# ===== Python env =====
+
+# ===== Frontend =====
+
+# ===== Logs / runtime =====
+logs/
+
+# ===== Database local =====
+
+# ===== AI models / weights =====
+backend/models/
+backend/modules/image/gesture/models/
+*.task
+
+# ===== Archives =====
+
+# ===== OS / IDE =====
+
+
+# EduVision AI Agent runtime local data
+backend/.agent_audit/
+backend/.agent_events/
+backend/.agent_jobs/
+backend/.agent_memory/
+backend/.agent_outbox/
+backend/.presentation_runtime/
+backend/modules/ai_agent/*.bak_event_tracker_*
+
+# Python cache
+*.pyc
+
+# Frontend build/deps
+
+# ===== Local runtime / cache =====
+*.bak_*
+*.bak
+
+# ===== Frontend local =====
+frontend/node_modules/
+frontend/dist/
+
+# ===== Agent secrets / runtime state =====
+backend/.env.agent
+backend/.agent_sessions/
+backend/.agent_quizzes/
+
+# Local cache / build
+
+# Agent local runtime / secrets
+
+# ===== Local cache / backup =====
+
+
+# ===== Agent local runtime / secrets =====
+
+# ===== Python / local env =====
+backend/.venv/
+
+# graphify knowledge graph (generated, ~40MB — rebuild with `graphify update .`)
+graphify-out/

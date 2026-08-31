@@ -1,0 +1,5 @@
+bitsandbytes>=0.48
+datasets>=4.0
+qwen-vl-utils>=0.0.14
+trl @ git+https://github.com/huggingface/trl.git@8bbf121f6e2dbbd304994731f052ad06752625d0
+peft @ git+https://github.com/huggingface/peft.git@02d57bfc63c536265ba8dfa5b9ca9de29e0c3831

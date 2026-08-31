@@ -1,0 +1,998 @@
+{
+  "families": 70,
+  "exact": 70,
+  "not_exact": [],
+  "results": [
+    {
+      "family": "addition",
+      "renderers": {
+        "object_group": 12
+      },
+      "problem_types": {
+        "addition_basic": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "subtraction",
+      "renderers": {
+        "object_group": 12
+      },
+      "problem_types": {
+        "subtraction_basic": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "multiplication_grouping",
+      "renderers": {
+        "grouping": 12
+      },
+      "problem_types": {
+        "multiplication_grouping": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "division_grouping",
+      "renderers": {
+        "grouping": 12
+      },
+      "problem_types": {
+        "division_grouping": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "fraction_addition",
+      "renderers": {
+        "fraction": 12
+      },
+      "problem_types": {
+        "fraction_addition": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "fraction_subtraction",
+      "renderers": {
+        "fraction": 12
+      },
+      "problem_types": {
+        "fraction_subtraction": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "fraction_multiplication",
+      "renderers": {
+        "fraction": 12
+      },
+      "problem_types": {
+        "fraction_multiplication": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "fraction_equivalence",
+      "renderers": {
+        "fraction": 12
+      },
+      "problem_types": {
+        "fraction_equivalence": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "fraction_power",
+      "renderers": {
+        "power_model": 12
+      },
+      "problem_types": {
+        "fraction_power": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "ratio_from_known_value",
+      "renderers": {
+        "bar_model": 12
+      },
+      "problem_types": {
+        "ratio_from_known_value": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "ratio_total_parts",
+      "renderers": {
+        "bar_model": 12
+      },
+      "problem_types": {
+        "ratio_total_parts": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "proportional_system_two_variables",
+      "renderers": {
+        "bar_model": 12
+      },
+      "problem_types": {
+        "proportional_system_two_variables": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "arithmetic_mean",
+      "renderers": {
+        "bar_model": 12
+      },
+      "problem_types": {
+        "arithmetic_mean": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "multi_step_arithmetic_word",
+      "renderers": {
+        "bar_model": 12
+      },
+      "problem_types": {
+        "multi_step_arithmetic_subtract_then_add": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "map_scale",
+      "renderers": {
+        "unit_scale": 12
+      },
+      "problem_types": {
+        "map_scale": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "sequential_fraction_remainder_ratio",
+      "renderers": {
+        "bar_model": 12
+      },
+      "problem_types": {
+        "sequential_fraction_remainder_ratio": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "sequential_fraction_remainder_quantity",
+      "renderers": {
+        "bar_model": 12
+      },
+      "problem_types": {
+        "sequential_fraction_remainder_quantity": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "work_rate_with_variable_people",
+      "renderers": {
+        "bar_model": 12
+      },
+      "problem_types": {
+        "work_rate_with_variable_people": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "linear_equation",
+      "renderers": {
+        "balance": 12
+      },
+      "problem_types": {
+        "linear_equation": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "compound_linear_equation",
+      "renderers": {
+        "balance": 12
+      },
+      "problem_types": {
+        "compound_linear_equation": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "linear_function",
+      "renderers": {
+        "coordinate_graph": 12
+      },
+      "problem_types": {
+        "linear_function": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "linear_inequality_one_variable",
+      "renderers": {
+        "solution_set": 12
+      },
+      "problem_types": {
+        "linear_inequality_one_variable": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "product_equation_roots",
+      "renderers": {
+        "solution_set": 12
+      },
+      "problem_types": {
+        "product_equation_roots": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "rational_equation_domain",
+      "renderers": {
+        "solution_set": 12
+      },
+      "problem_types": {
+        "rational_equation_domain": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "quadratic_surface_three_variables",
+      "renderers": {
+        "geometry_3d": 12
+      },
+      "problem_types": {
+        "quadratic_surface_three_variables": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "mixed_rational_arithmetic_percent",
+      "renderers": {
+        "expression_tree": 12
+      },
+      "problem_types": {
+        "mixed_rational_expression": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "discount_tax_percentage",
+      "renderers": {
+        "percent_grid": 12
+      },
+      "problem_types": {
+        "discount_tax_percentage": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "multi_segment_equal_distance_motion",
+      "renderers": {
+        "motion_path": 12
+      },
+      "problem_types": {
+        "multi_segment_equal_distance_motion": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "time_calendar_duration",
+      "renderers": {
+        "calendar": 12
+      },
+      "problem_types": {
+        "time_calendar_duration": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "algebraic_expression_modeling",
+      "renderers": {
+        "algebra_tiles": 12
+      },
+      "problem_types": {
+        "algebraic_expression_modeling": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "triangle_congruence_centroid_proof",
+      "renderers": {
+        "geometry_2d": 12
+      },
+      "problem_types": {
+        "triangle_centroid_median_proof": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "triangle_similarity_metric_relation",
+      "renderers": {
+        "geometry_2d": 12
+      },
+      "problem_types": {
+        "triangle_similarity_metric_relation": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "word_equation_rectangle",
+      "renderers": {
+        "balance": 12
+      },
+      "problem_types": {
+        "word_equation_rectangle": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "right_triangle_solution",
+      "renderers": {
+        "geometry_2d": 12
+      },
+      "problem_types": {
+        "right_triangle_solution": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "angle_of_depression_distance",
+      "renderers": {
+        "geometry_2d": 12
+      },
+      "problem_types": {
+        "angle_of_depression_distance": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "oblique_triangle_altitude_solution",
+      "renderers": {
+        "geometry_2d": 12
+      },
+      "problem_types": {
+        "oblique_triangle_altitude_solution": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "parallelogram_perpendicular_diagonal_area",
+      "renderers": {
+        "geometry_2d": 12
+      },
+      "problem_types": {
+        "parallelogram_perpendicular_diagonal_area": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "coordinate_plot",
+      "renderers": {
+        "coordinate_graph": 12
+      },
+      "problem_types": {
+        "coordinate_plot": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "rectangle_area",
+      "renderers": {
+        "geometry_2d": 12
+      },
+      "problem_types": {
+        "rectangle_area": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "rectangle_perimeter",
+      "renderers": {
+        "geometry_2d": 12
+      },
+      "problem_types": {
+        "rectangle_perimeter": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "cuboid_volume",
+      "renderers": {
+        "geometry_3d": 12
+      },
+      "problem_types": {
+        "cuboid_volume": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "binomial_expansion",
+      "renderers": {
+        "bar_model": 12
+      },
+      "problem_types": {
+        "binomial_expansion": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "distance_speed_time",
+      "renderers": {
+        "motion_path": 12
+      },
+      "problem_types": {
+        "distance_speed_time": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "place_value_read_write",
+      "renderers": {
+        "place_value": 12
+      },
+      "problem_types": {
+        "place_value_read_write": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "decimal_read_write",
+      "renderers": {
+        "place_value": 12
+      },
+      "problem_types": {
+        "decimal_read_write": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "column_arithmetic_regrouping",
+      "renderers": {
+        "column_algorithm": 12
+      },
+      "problem_types": {
+        "column_arithmetic_regrouping_addition": 3,
+        "column_arithmetic_regrouping_multiplication": 3,
+        "column_arithmetic_regrouping_division": 3,
+        "column_arithmetic_regrouping_subtraction": 3
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "decimal_arithmetic",
+      "renderers": {
+        "column_algorithm": 12
+      },
+      "problem_types": {
+        "decimal_arithmetic_addition": 3,
+        "decimal_arithmetic_multiplication": 3,
+        "decimal_arithmetic_division": 3,
+        "decimal_arithmetic_subtraction": 3
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "measurement_conversion_comparison",
+      "renderers": {
+        "unit_scale": 12
+      },
+      "problem_types": {
+        "measurement_conversion_comparison": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "picture_bar_chart_reading",
+      "renderers": {
+        "data_chart": 12
+      },
+      "problem_types": {
+        "picture_bar_chart_reading": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "fraction_division",
+      "renderers": {
+        "fraction": 12
+      },
+      "problem_types": {
+        "fraction_division": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "quadratic_function_graph",
+      "renderers": {
+        "coordinate_graph": 12
+      },
+      "problem_types": {
+        "quadratic_function_graph": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "quadratic_equation_vieta",
+      "renderers": {
+        "coordinate_graph": 12
+      },
+      "problem_types": {
+        "quadratic_equation_vieta": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "statistics_probability_from_chart",
+      "renderers": {
+        "data_chart": 12
+      },
+      "problem_types": {
+        "statistics_probability_from_chart": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "triangle_area",
+      "renderers": {
+        "geometry_2d": 12
+      },
+      "problem_types": {
+        "triangle_area": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "number_ordering_rounding",
+      "renderers": {
+        "number_compare": 12
+      },
+      "problem_types": {
+        "number_ordering_rounding_ordering": 6,
+        "number_ordering_rounding_rounding": 6
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "circle_radius_diameter",
+      "renderers": {
+        "geometry_2d": 12
+      },
+      "problem_types": {
+        "circle_radius_diameter": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "circle_area",
+      "renderers": {
+        "circle_model": 12
+      },
+      "problem_types": {
+        "circle_area": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "circle_tangent_cyclic_proof",
+      "renderers": {
+        "circle_model": 12
+      },
+      "problem_types": {
+        "circle_tangent_cyclic_proof": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "divisibility_common_multiple",
+      "renderers": {
+        "factor_lattice": 12
+      },
+      "problem_types": {
+        "divisibility_common_multiple": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "rhombus_parallelogram_area_properties",
+      "renderers": {
+        "geometry_2d": 12
+      },
+      "problem_types": {
+        "parallelogram_area_properties": 6,
+        "rhombus_area_properties": 6
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "ray_segment_midpoint",
+      "renderers": {
+        "geometry_2d": 12
+      },
+      "problem_types": {
+        "ray_segment_midpoint": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "angle_bisector",
+      "renderers": {
+        "geometry_2d": 12
+      },
+      "problem_types": {
+        "angle_bisector": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "experimental_probability",
+      "renderers": {
+        "probability_simulator": 12
+      },
+      "problem_types": {
+        "experimental_probability": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "cylinder_cone_sphere_volume",
+      "renderers": {
+        "geometry_3d": 12
+      },
+      "problem_types": {
+        "cone_volume": 6,
+        "sphere_volume": 3,
+        "cylinder_volume": 3
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "percentage_part_whole",
+      "renderers": {
+        "percent_grid": 12
+      },
+      "problem_types": {
+        "percentage_part_whole": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "polynomial_evaluate_reorder",
+      "renderers": {
+        "algebra_tiles": 12
+      },
+      "problem_types": {
+        "polynomial_evaluate_reorder": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "polynomial_add_subtract",
+      "renderers": {
+        "algebra_tiles": 12
+      },
+      "problem_types": {
+        "polynomial_add_subtract_addition": 6,
+        "polynomial_add_subtract_subtraction": 6
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "signed_decimal_fraction_ordering",
+      "renderers": {
+        "number_compare": 12
+      },
+      "problem_types": {
+        "signed_decimal_fraction_ordering": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "missing_number_equation",
+      "renderers": {
+        "part_whole": 12
+      },
+      "problem_types": {
+        "missing_number_equation": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    },
+    {
+      "family": "shape_recognition_counting_pattern",
+      "renderers": {
+        "shape_pattern": 12
+      },
+      "problem_types": {
+        "shape_recognition_counting_pattern": 12
+      },
+      "plan_status": {
+        "ready": 12
+      },
+      "failures": [],
+      "exact": true
+    }
+  ]
+}

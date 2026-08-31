@@ -1,0 +1,128 @@
+[
+  {
+    "name": "grade_1_addition",
+    "expected": ["object_group"],
+    "model": {
+      "grade": 1,
+      "domain": "arithmetic",
+      "problem_type": "addition",
+      "source_text": "3 + 2 = ?",
+      "quantities": [
+        {"id": "left", "value": 3, "unit": "one"},
+        {"id": "right", "value": 2, "unit": "one"}
+      ],
+      "unknowns": [{"id": "sum", "kind": "result"}]
+    }
+  },
+  {
+    "name": "grade_3_fraction",
+    "expected": ["fraction"],
+    "model": {
+      "grade": 3,
+      "domain": "fraction",
+      "problem_type": "part_whole",
+      "source_text": "Giải thích 3/4.",
+      "quantities": [
+        {"id": "numerator", "value": 3, "unit": "one", "role": "numerator"},
+        {"id": "denominator", "value": 4, "unit": "one", "role": "denominator"}
+      ]
+    }
+  },
+  {
+    "name": "grade_5_motion",
+    "expected": ["motion_path", "clock", "timeline"],
+    "model": {
+      "id": "lan_to_school",
+      "grade": 5,
+      "domain": "motion",
+      "problem_type": "distance_speed_time",
+      "source_text": "Nhà Lan cách trường 1.2 km. Lan đi 4 km/h và bắt đầu lúc 06:45.",
+      "entities": [
+        {"id": "lan", "type": "person", "label": "Lan"},
+        {"id": "home", "type": "location", "label": "Nhà"},
+        {"id": "school", "type": "location", "label": "Trường"}
+      ],
+      "quantities": [
+        {"id": "distance", "value": 1.2, "unit": "km", "label": "Quãng đường", "editable": true},
+        {"id": "speed", "value": 4, "unit": "km/h", "label": "Vận tốc", "editable": true}
+      ],
+      "unknowns": [{"id": "arrival_time", "kind": "time", "label": "Thời gian đến"}],
+      "relations": [
+        {
+          "id": "motion_relation",
+          "type": "motion",
+          "participants": {"subject": "lan", "from": "home", "to": "school"}
+        }
+      ],
+      "time": {"start": "06:45"}
+    }
+  },
+  {
+    "name": "grade_6_geometry",
+    "expected": ["geometry_2d"],
+    "model": {
+      "grade": 6,
+      "domain": "geometry_2d",
+      "problem_type": "right_triangle",
+      "source_text": "Tam giác ABC vuông tại A, AB=3, AC=4.",
+      "entities": [
+        {"id": "point_a", "type": "point", "label": "A"},
+        {"id": "point_b", "type": "point", "label": "B"},
+        {"id": "point_c", "type": "point", "label": "C"}
+      ],
+      "quantities": [
+        {"id": "length_ab", "value": 3, "unit": "cm"},
+        {"id": "length_ac", "value": 4, "unit": "cm"}
+      ],
+      "constraints": [
+        {"id": "right_at_a", "type": "perpendicular", "target_ids": ["point_a", "point_b", "point_c"]}
+      ]
+    }
+  },
+  {
+    "name": "grade_7_equation",
+    "expected": ["balance"],
+    "model": {
+      "grade": 7,
+      "domain": "algebra",
+      "problem_type": "linear_equation",
+      "source_text": "2x+3=9",
+      "unknowns": [{"id": "x", "kind": "variable"}]
+    }
+  },
+  {
+    "name": "grade_8_linear_function",
+    "expected": ["coordinate_graph"],
+    "model": {
+      "grade": 8,
+      "domain": "coordinate",
+      "problem_type": "linear_function",
+      "source_text": "y=2x+1",
+      "quantities": [
+        {"id": "coefficient", "value": 2, "unit": "one", "role": "coefficient"},
+        {"id": "constant", "value": 1, "unit": "one", "role": "constant"}
+      ],
+      "unknowns": [
+        {"id": "x", "kind": "input"},
+        {"id": "y", "kind": "output"}
+      ]
+    }
+  },
+  {
+    "name": "grade_9_cuboid",
+    "expected": ["geometry_3d"],
+    "model": {
+      "grade": 9,
+      "domain": "geometry_3d",
+      "problem_type": "cuboid_volume",
+      "source_text": "Hình hộp chữ nhật dài 4cm, rộng 3cm, cao 2cm.",
+      "entities": [{"id": "solid", "type": "cuboid", "label": "Hình hộp chữ nhật"}],
+      "quantities": [
+        {"id": "length", "value": 4, "unit": "cm", "role": "length", "editable": true},
+        {"id": "width", "value": 3, "unit": "cm", "role": "width", "editable": true},
+        {"id": "height", "value": 2, "unit": "cm", "role": "height", "editable": true}
+      ],
+      "unknowns": [{"id": "volume", "kind": "volume", "unit": "cm3"}]
+    }
+  }
+]

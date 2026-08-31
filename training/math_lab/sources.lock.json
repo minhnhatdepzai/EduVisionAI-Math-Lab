@@ -1,0 +1,116 @@
+{
+  "checked_at": "2026-08-27T17:40:28+07:00",
+  "policy": "Raw sources are immutable and ignored by Git. Benchmark/eval sources never enter training targets.",
+  "sources": [
+    {
+      "id": "kaggle:maryamasad20/handwritten-math-symbols-mnist-format15-classes",
+      "url": "https://www.kaggle.com/datasets/maryamasad20/handwritten-math-symbols-mnist-format15-classes",
+      "updated_at": "2026-08-23T13:42:19.497Z",
+      "license": "CC0-1.0",
+      "local_artifact": "data/raw/math_symbols_cc0/mathsymbols_dataset/train.csv",
+      "sha256": "e7d18a44357544be1575f62e5aefd4aaa7d3d06307dc4023bed9cbd44c3f0026",
+      "use": "separate_ocr_adapter_candidate",
+      "decision": "Latest licensed Kaggle OCR result checked on 2026-08-26. Keep out of semantic SFT because isolated synthetic glyph labels are not ProviderDocument scene targets."
+    },
+    {
+      "id": "kaggle:rbrtsl/aimo3-math-corpus",
+      "url": "https://www.kaggle.com/datasets/rbrtsl/aimo3-math-corpus",
+      "updated_at": "2026-03-13T12:00:46.900Z",
+      "license": "Apache-2.0",
+      "local_artifact": "data/raw/aimo3/math_corpus/math_corpus_aimo3.jsonl",
+      "sha256": "7b3d79b2e299220645c1acd653997cb5878f62784b5637b67b5210ae3e2f4461",
+      "use": "seed_only",
+      "decision": "Do not copy solutions into SFT. Only human-review candidate problem structures before converting to grade 1-9 scene templates."
+    },
+    {
+      "id": "kaggle:shiva22btcse0007/25k-math-equation",
+      "url": "https://www.kaggle.com/datasets/shiva22btcse0007/25k-math-equation",
+      "updated_at": "2026-05-11T04:53:12.097Z",
+      "license": "MIT",
+      "local_artifact": "data/raw/equation25k/dataset25k/labels.txt",
+      "sha256": "6a52486b7b866bd9cdced57f06a2d3f3c6a005d8501429a34ed9dde55d597e96",
+      "use": "separate_ocr_adapter_candidate",
+      "decision": "Useful for formula perception only. Random advanced expressions are not valid Math Scene semantic labels."
+    },
+    {
+      "id": "kaggle:ravidussilva/lessonbench-v1",
+      "url": "https://www.kaggle.com/datasets/ravidussilva/lessonbench-v1",
+      "updated_at": "2026-06-12T07:38:48.660Z",
+      "license": "CC-BY-SA-4.0 in Kaggle metadata; upstream lesson rights retained",
+      "local_artifact": "data/raw/lessonbench/LessonBench-V1.csv",
+      "sha256": "6ea93c97aa93c34a8b6395576a9c48ee939189ac0572d9678e1359e5c4ea8691",
+      "use": "pedagogy_reference_only",
+      "decision": "Do not train on lesson text/media. Use the index to identify pedagogical topics and preserve source attribution."
+    },
+    {
+      "id": "hf:UCSC-VLAA/VLM-CapCurriculum-VisualReasoning-Data",
+      "url": "https://huggingface.co/datasets/UCSC-VLAA/VLM-CapCurriculum-VisualReasoning-Data",
+      "revision": "094feaf1b64b455f67111eb80bdc6cf3f6be198c",
+      "updated_at": "2026-05-20T19:32:04Z",
+      "license": "Apache-2.0 dataset card; every upstream image source must be audited separately",
+      "local_artifact": "data/raw/vlm_capcurriculum/visual_reasoning_difficulty_curriculum.jsonl",
+      "sha256": "7945f562100ed02c0ef2d1147218d8d58f1fdd7deccb0cd69e7741ba7f568c4f",
+      "use": "evaluation_candidate",
+      "decision": "JSONL downloaded; images intentionally not downloaded into train until the four upstream licenses and contamination boundaries are reviewed."
+    },
+    {
+      "id": "github:QwenLM/Qwen3-VL",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "revision": "96588727e44c78b25ba03ea03b8e12f7e64fd0da",
+      "latest_checked_revision": "96588727e44c78b25ba03ea03b8e12f7e64fd0da",
+      "commit_date": "2026-01-30T04:47:30Z",
+      "license": "Apache-2.0",
+      "use": "official_training_framework",
+      "decision": "Pin the official qwen-vl-finetune data contract and LoRA defaults; do not vendor the repository."
+    },
+    {
+      "id": "github:UCSC-VLAA/VLM-CapCurriculum",
+      "url": "https://github.com/UCSC-VLAA/VLM-CapCurriculum",
+      "revision": "ccde3ff2288a96c70665afc571f3e1da690553be",
+      "commit_date": "2026-05-20T19:34:19Z",
+      "license": "Source repository does not assert a machine-readable SPDX license",
+      "use": "research_reference",
+      "decision": "Reference curriculum ordering only; no code vendoring or training ingestion."
+    },
+    {
+      "id": "github:huggingface/trl",
+      "url": "https://github.com/huggingface/trl",
+      "revision": "8bbf121f6e2dbbd304994731f052ad06752625d0",
+      "latest_checked_revision": "67dfbe211a07a8dd6ebc1a5af5b75152e10add8e",
+      "latest_checked_at": "2026-08-27T17:40:28+07:00",
+      "commit_date": "2026-08-26T04:53:40Z",
+      "license": "Apache-2.0",
+      "use": "qlora_training_engine",
+      "decision": "Keep the tested pin. Latest HEAD only bumps the development version and has not passed this repository's QLoRA smoke; use max_length=null, freeze visual parameters and train image records only."
+    },
+    {
+      "id": "github:huggingface/peft",
+      "url": "https://github.com/huggingface/peft",
+      "revision": "02d57bfc63c536265ba8dfa5b9ca9de29e0c3831",
+      "latest_checked_revision": "13414e66235139fad4102dfd3c9502958dbdc92b",
+      "latest_checked_at": "2026-08-27T17:40:28+07:00",
+      "commit_date": "2026-08-25T15:34:42Z",
+      "license": "Apache-2.0",
+      "use": "qlora_adapter",
+      "decision": "Keep the tested pin. Latest HEAD is an FSDP2 sharding fix that is not required by the current single-GPU QLoRA path and has not passed this repository's smoke; do not install into production Python."
+    },
+    {
+      "id": "github:We-Math/We-Math",
+      "url": "https://github.com/We-Math/We-Math",
+      "use": "holdout_evaluation_only",
+      "decision": "Visual-math benchmark; keep out of train to prevent benchmark contamination."
+    },
+    {
+      "id": "github:lupantech/MathVista",
+      "url": "https://github.com/lupantech/MathVista",
+      "use": "holdout_evaluation_only",
+      "decision": "Multimodal benchmark; keep out of train."
+    },
+    {
+      "id": "github:ShadeAlsha/MathNet",
+      "url": "https://github.com/ShadeAlsha/MathNet",
+      "use": "holdout_evaluation_only",
+      "decision": "2026 multimodal benchmark with per-source rights; keep out of train."
+    }
+  ]
+}
